@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+Episode.delete_all
+Movie.delete_all
+
+CSV.open('episodes.csv').each do |r|
+  m = Movie.find_or_create_by(imdb_id: r[1], letterboxd_id: r[2]) if r[1].present?
+  if m
+    Episode.find_or_create_by(id: r[0], movie: m)
+  else
+    Episode.find_or_create_by(id: r[0])
+  end
+end
