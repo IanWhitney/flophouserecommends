@@ -10,12 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_29_175200) do
+ActiveRecord::Schema.define(version: 2021_05_29_234045) do
 
   create_table "episodes", force: :cascade do |t|
     t.integer "movie_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "episodes_hosts", id: false, force: :cascade do |t|
+    t.integer "episode_id"
+    t.integer "host_id"
+    t.index ["episode_id"], name: "index_episodes_hosts_on_episode_id"
+    t.index ["host_id"], name: "index_episodes_hosts_on_host_id"
   end
 
   create_table "hosts", force: :cascade do |t|
