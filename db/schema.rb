@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_29_234045) do
+ActiveRecord::Schema.define(version: 2021_05_30_182517) do
 
   create_table "episodes", force: :cascade do |t|
     t.integer "movie_id"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(version: 2021_05_29_234045) do
   create_table "movies", force: :cascade do |t|
     t.string "imdb_id"
     t.string "letterboxd_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "recommendations", force: :cascade do |t|
+    t.integer "episode_id"
+    t.integer "host_id"
+    t.integer "movie_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
