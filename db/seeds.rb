@@ -1,5 +1,14 @@
 require 'csv'
 
+Recommendation.delete_all
+
+Episode.all.each do |e|
+  e.hosts.clear
+end
+
+Episode.delete_all
+Host.delete_all
+
 Movie.delete_all
 
 Movie.find_or_create_by(imdb_id: 'tt0382992', letterboxd_id: 'stealth')
@@ -1410,7 +1419,6 @@ Movie.find_or_create_by(imdb_id: 'tt9617782', letterboxd_id: 'who-let-the-dogs-o
 Movie.find_or_create_by(imdb_id: 'tt9741310', letterboxd_id: 'slaxx')
 Movie.find_or_create_by(imdb_id: 'tt9777644', letterboxd_id: 'da-5-bloods')
 
-Episode.delete_all
 CSV.open('episodes.csv').each do |r|
   m = Movie.find_by_imdb_id(r[1]) if r[1].present?
   if m
@@ -1420,7 +1428,6 @@ CSV.open('episodes.csv').each do |r|
   end
 end
 
-Host.delete_all
 Host.create(id: 1, name: 'Dan McCoy')
 Host.create(id: 2, name: 'Stuart Wellington')
 Host.create(id: 3, name: 'Elliott Kalan')
@@ -1482,10 +1489,6 @@ Host.create(id: 58, name: 'Alex Smith')
 Host.create(id: 59, name: 'Ronny Chieng')
 Host.create(id: 60, name: 'Barbara Crampton')
 Host.create(id: 61, name: 'Matt Singer')
-
-Episode.all.each do |e|
-  e.hosts.clear
-end
 
 Episode.find(1).hosts << Host.find(1)
 Episode.find(1).hosts << Host.find(2)
@@ -2564,7 +2567,6 @@ Episode.find(343).hosts << Host.find(2)
 Episode.find(343).hosts << Host.find(3)
 Episode.find(343).hosts << Host.find(4)
 
-Recommendation.delete_all
 Recommendation.find_or_create_by(episode_id: 342, host_id: 1, movie_id: Movie.find_by_imdb_id('tt0072226').id)
 Recommendation.find_or_create_by(episode_id: 342, host_id: 2, movie_id: Movie.find_by_imdb_id('tt7979580').id)
 Recommendation.find_or_create_by(episode_id: 342, host_id: 3, movie_id: Movie.find_by_imdb_id('tt0057374').id)

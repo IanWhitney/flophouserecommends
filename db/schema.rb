@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_30_182517) do
+ActiveRecord::Schema.define(version: 2021_05_30_212725) do
 
   create_table "episodes", force: :cascade do |t|
     t.integer "movie_id"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2021_05_30_182517) do
     t.string "letterboxd_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["imdb_id"], name: "index_movies_on_imdb_id", unique: true
   end
 
   create_table "recommendations", force: :cascade do |t|
@@ -44,6 +45,15 @@ ActiveRecord::Schema.define(version: 2021_05_30_182517) do
     t.integer "movie_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["episode_id"], name: "index_recommendations_on_episode_id"
+    t.index ["host_id"], name: "index_recommendations_on_host_id"
+    t.index ["movie_id"], name: "index_recommendations_on_movie_id"
   end
 
+  add_foreign_key "episodes", "movies"
+  add_foreign_key "episodes_hosts", "episodes"
+  add_foreign_key "episodes_hosts", "hosts"
+  add_foreign_key "recommendations", "episodes"
+  add_foreign_key "recommendations", "hosts"
+  add_foreign_key "recommendations", "movies"
 end
