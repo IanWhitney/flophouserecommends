@@ -2562,10 +2562,6 @@ Episode.find(341).hosts << Host.find(57)
 Episode.find(342).hosts << Host.find(1)
 Episode.find(342).hosts << Host.find(2)
 Episode.find(342).hosts << Host.find(3)
-Episode.find(343).hosts << Host.find(1)
-Episode.find(343).hosts << Host.find(2)
-Episode.find(343).hosts << Host.find(3)
-Episode.find(343).hosts << Host.find(4)
 
 Recommendation.find_or_create_by(episode_id: 342, host_id: 1, movie_id: Movie.find_by_imdb_id('tt0072226').id)
 Recommendation.find_or_create_by(episode_id: 342, host_id: 2, movie_id: Movie.find_by_imdb_id('tt7979580').id)
@@ -3740,3 +3736,29 @@ Recommendation.find_or_create_by(episode_id: 1, host_id: 1, movie_id: Movie.find
 Recommendation.find_or_create_by(episode_id: 1, host_id: 2, movie_id: Movie.find_by_imdb_id('tt0093560').id)
 Recommendation.find_or_create_by(episode_id: 1, host_id: 26, movie_id: Movie.find_by_imdb_id('tt0811106').id)
 Recommendation.find_or_create_by(episode_id: 1, host_id: 26, movie_id: Movie.find_by_imdb_id('tt0323033').id)
+
+
+#---
+movie = Movie.find_or_create_by(imdb_id: 'tt0110687', letterboxd_id: 'north')
+episode = Episode.find_or_create_by(id: 343, movie: movie)
+
+host = Host.find(1)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0039689', letterboxd_id: 'out-of-the-past')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(2)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt11908982', letterboxd_id: 'jakobs-wife')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(3)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0063633', letterboxd_id: 'the-cremator')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(61)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0067454', letterboxd_id: 'multiple-maniacs')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+#---
