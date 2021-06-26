@@ -1489,6 +1489,8 @@ Host.create(id: 58, name: 'Alex Smith')
 Host.create(id: 59, name: 'Ronny Chieng')
 Host.create(id: 60, name: 'Barbara Crampton')
 Host.create(id: 61, name: 'Matt Singer')
+Host.create(id: 62, name: 'Naomi Ekperigin')
+Host.create(id: 63, name: 'Andy Beckerman')
 
 Episode.find(1).hosts << Host.find(1)
 Episode.find(1).hosts << Host.find(2)
@@ -3760,5 +3762,55 @@ Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
 host = Host.find(61)
 episode.hosts << host
 movie = Movie.find_or_create_by(imdb_id: 'tt0067454', letterboxd_id: 'multiple-maniacs')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+#---
+#--- 344
+movie = Movie.find_or_create_by(imdb_id: 'tt0293429', letterboxd_id: 'mortal-kombat-2021')
+episode = Episode.find_or_create_by(id: 344, movie: movie)
+
+host = Host.find(1)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0079833', letterboxd_id: 'lupin-the-third-the-castle-of-cagliostro')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(2)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt13172796', letterboxd_id: 'plan-b-2021')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(3)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0024450', letterboxd_id: 'picture-snatcher')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(62) #Naomi Ekperigin
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0091419', letterboxd_id: 'little-shop-of-horrors')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(63) #Andy Beckerman
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt13973190', letterboxd_id: 'cant-get-you-out-of-my-head')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+movie = Movie.find_or_create_by(imdb_id: 'tt6156350', letterboxd_id: 'hypernormalisation')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+#---
+#--- 345
+movie = Movie.find_or_create_by(imdb_id: 'tt2076822', letterboxd_id: 'chaos-walking')
+episode = Episode.find_or_create_by(id: 345, movie: movie)
+
+host = Host.find(1)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0082926', letterboxd_id: 'polyester')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(2)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt11188624', letterboxd_id: 'film:567517')
+Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
+
+host = Host.find(3)
+episode.hosts << host
+movie = Movie.find_or_create_by(imdb_id: 'tt0065241', letterboxd_id: 'the-joke')
 Recommendation.find_or_create_by(episode: episode, host: host, movie: movie)
 #---
