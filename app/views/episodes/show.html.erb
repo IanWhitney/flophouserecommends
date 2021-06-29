@@ -1,1 +1,1 @@
-<%= @episode.id %>: <%= @episode.movie.imdb_id %>
+<%= render(EpisodeTitleComponent.new(episode: @episode)) %>

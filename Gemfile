@@ -10,6 +10,7 @@ gem "rails", "~> 6.1.3", ">= 6.1.3.2"
 gem "sass-rails", ">= 6"
 gem "sqlite3", "~> 1.4"
 gem "turbolinks", "~> 5"
+gem "view_component", require: "view_component/engine"
 gem "webpacker", "~> 5.0"
 
 group :development, :test do

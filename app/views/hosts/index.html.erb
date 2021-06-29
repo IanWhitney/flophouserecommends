@@ -1,3 +1,1 @@
-<% @hosts.each do |host| %>
-  <%= host.id %>: <%= link_to(host.name, host) %><br />
-<% end %>
+<%= render(HostComponent.with_collection(@hosts)) %>

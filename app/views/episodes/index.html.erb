@@ -1,3 +1,1 @@
-<% @episodes.each do |episode| %>
-  <%= link_to(episode.id, episode) %>: <%= episode&.movie&.imdb_id %>: <%= episode&.movie&.letterboxd_id %><br />
-<% end %>
+<%= render(EpisodeTitleComponent.with_collection(@episodes)) %>

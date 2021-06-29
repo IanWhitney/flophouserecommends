@@ -1,0 +1,4 @@
+<div>
+  <%= link_to(@episode.id, @episode) %>: 
+  <%= render(MovieComponent.new(movie: @episode.movie)) %>
+</div>
