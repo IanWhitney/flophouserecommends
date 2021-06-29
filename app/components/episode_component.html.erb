@@ -1,0 +1,7 @@
+<div>
+  <%= link_to(@episode.id, @episode) %>: 
+  <%= render(MovieComponent.new(movie: @episode.movie)) %>
+</div>
+<% @episode.hosts.each do |host| %>
+  <%= render(EpisodeHostComponent.new(episode: @episode, host: host)) %>
+<% end %>

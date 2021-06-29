@@ -1,4 +1,4 @@
 <div>
-  <%= @host.id %>: <%= link_to(@host.name, @host) %><br />
+  <%= render(HostNameComponent.new(host: @host)) %>
   <%= render(EpisodeTitleComponent.with_collection(@host.episodes)) %>
 </div>

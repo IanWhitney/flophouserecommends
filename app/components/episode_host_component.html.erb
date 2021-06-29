@@ -1,0 +1,4 @@
+<div>
+  <%= render(HostNameComponent.new(host: @host)) %>
+  <%= render(RecommendationComponent.with_collection(@episode.recommendations_for(@host))) %>
+</div>
