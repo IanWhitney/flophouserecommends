@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :episodes, only: [:index]
   root to: "episodes#index"
+
+  resources :episodes, only: [:index, :show]
+  resources :hosts, only: [:index, :show]
 end

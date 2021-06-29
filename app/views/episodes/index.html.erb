@@ -1,3 +1,3 @@
 <% @episodes.each do |episode| %>
-  <%= episode.id %>: <%= episode&.movie&.imdb_id %>: <%= episode&.movie&.letterboxd_id %><br />
+  <%= link_to(episode.id, episode) %>: <%= episode&.movie&.imdb_id %>: <%= episode&.movie&.letterboxd_id %><br />
 <% end %>
