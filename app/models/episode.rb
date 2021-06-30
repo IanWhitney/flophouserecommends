@@ -6,4 +6,11 @@ class Episode < ApplicationRecord
   def recommendations_for(host)
     recommendations.where(host: host)
   end
+
+  def find_or_create_host(host)
+    return host if self.hosts.include?(host)
+
+    hosts << host
+    host
+  end
 end
