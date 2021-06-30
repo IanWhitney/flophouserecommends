@@ -1,1 +1,3 @@
-<%= @movie&.imdb_id %>: <%= @movie&.letterboxd_id %>
+<i><%= @movie.title %></i>
+<%= link_to("IMDb", "https://www.imdb.com/title/#{@movie.imdb_id}") if @movie.imdb_id %>
+<%= link_to("Letterboxd", "https://letterboxd.com/film/#{@movie.letterboxd_id}") if @movie.letterboxd_id %>
