@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   resources :episodes, only: [:index, :show]
   resources :hosts, only: [:index, :show]
+  resources :movies, only: [:show]
 end
