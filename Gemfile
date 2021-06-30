@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.1"
 
+gem "aws-sdk-s3"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "jbuilder", "~> 2.7"
 gem "puma", "~> 5.0"

@@ -4,6 +4,8 @@ class Movie < ApplicationRecord
 
   before_save :populate
 
+  has_one_attached :poster
+
   private
 
   def populate
