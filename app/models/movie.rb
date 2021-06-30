@@ -8,9 +8,10 @@ class Movie < ApplicationRecord
 
   def populate
     return nil if title.present?
-    return "" unless imdb_id.present?
+    return nil unless imdb_id.present?
 
     url = URI("http://omdbapi.com/?apikey=#{ENV["OMDBAPIKEY"]}&i=#{imdb_id}")
     self.title = JSON.parse(Net::HTTP.get(url))["Title"]
+    nil
   end
 end

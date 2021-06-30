@@ -8,7 +8,7 @@ class Episode < ApplicationRecord
   end
 
   def find_or_create_host(host)
-    return host if self.hosts.include?(host)
+    return host if hosts.include?(host)
 
     hosts << host
     host
