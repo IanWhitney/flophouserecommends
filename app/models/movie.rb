@@ -9,6 +9,8 @@ class Movie < ApplicationRecord
 
   has_one_attached :poster
 
+  scope :search_by_title, ->(search) { where("title like ?", "%#{search}%") }
+
   private
 
   def imdb_entry
