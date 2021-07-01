@@ -1,1 +1,17 @@
-<%= render(EpisodeComponent.new(episode: @episode)) %>
+<h1>
+<%= render(EpisodeTitleComponent.new(episode: @episode)) %>
+</h1>
+<%= link_to (@episode.id + 1), Episode.find(@episode.id + 1) %>
+<% @episode.hosts.each do |host| %>
+  <div>
+    <h2><%= host.name %></h2>
+    <% if @episode.recommendations_for(host).any? %>
+      <% @episode.recommendations_for(host).each do |recommendation| %>
+        <%= render(MovieComponent.new(movie: recommendation.movie)) %>
+      <% end %>
+    <% else %>
+      No recommendations made
+    <% end %>
+  </div>
+<% end %>
+

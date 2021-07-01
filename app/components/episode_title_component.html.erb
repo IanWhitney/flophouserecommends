@@ -1,4 +1,6 @@
-<div>
-  <%= link_to(@episode.id, @episode) %>: 
-  <%= render(MovieComponent.new(movie: @episode.movie)) %>
-</div>
+Episode <%= @episode.id %>: 
+<% if @episode.movie.present? %>
+  <i><%= link_to(@episode.movie.title, @episode.movie) %></i>
+<% else %>
+  No movie watched
+<% end %>

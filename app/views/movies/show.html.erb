@@ -9,7 +9,3 @@
   <h2>Recommended</h2>
   <%= render(RecommendationComponent.with_collection(@movie.recommendations)) %>
 <% end %>
-
-<% if @movie.poster.attached? %>
-<%= image_tag url_for(@movie.poster) %>
-<% end %>
