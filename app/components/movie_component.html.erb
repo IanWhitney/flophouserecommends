@@ -4,6 +4,3 @@
 <% if Recommendation.exists?(movie: @movie) %>
 (<%= Recommendation.where(movie: @movie).count %>)
 <% end %>
-<% if @movie.poster.attached? %>
-<%= image_tag url_for(@movie.poster) %>
-<% end %>

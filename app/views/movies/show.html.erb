@@ -1,4 +1,15 @@
 <%= @movie.title %>
+
+<% if @movie.episodes.any? %>
+  <h2>Watched For</h2>
+  <%= render(EpisodeTitleComponent.with_collection(@movie.episodes)) %>
+<% end %>
+
+<% if @movie.recommendations.any? %>
+  <h2>Recommended</h2>
+  <%= render(RecommendationComponent.with_collection(@movie.recommendations)) %>
+<% end %>
+
 <% if @movie.poster.attached? %>
 <%= image_tag url_for(@movie.poster) %>
 <% end %>
