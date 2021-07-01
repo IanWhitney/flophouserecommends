@@ -1,3 +1,6 @@
+require "open-uri"
+require "tempfile"
+
 class Movie < ApplicationRecord
   has_many :episodes
   has_many :recommendations
@@ -8,12 +11,35 @@ class Movie < ApplicationRecord
 
   private
 
+  def imdb_entry
+    @imdb_entry || ImdbEntry.build(imdb_id)
+  end
+
   def populate
     return nil if title.present?
     return nil unless imdb_id.present?
 
-    url = URI("http://omdbapi.com/?apikey=#{ENV["OMDBAPIKEY"]}&i=#{imdb_id}")
-    self.title = JSON.parse(Net::HTTP.get(url))["Title"]
+    self.title = imdb_entry.title
+
+    copy_poster
+
     nil
+  end
+
+  def copy_poster
+    return nil if poster.attached?
+    return nil unless imdb_entry.has_poster?
+
+    begin
+      tmp = Tempfile.new(imdb_id, binmode: true)
+      tmp << URI(imdb_entry.poster_uri.to_s).read
+      tmp.rewind
+      poster.attach(io: tmp, filename: "#{id}.jpg", content_type: "image/jpeg", identify: false)
+    rescue
+      nil
+    ensure
+      tmp.close
+      tmp.unlink
+    end
   end
 end
