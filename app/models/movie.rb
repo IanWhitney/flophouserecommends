@@ -39,9 +39,6 @@ class Movie < ApplicationRecord
       poster.attach(io: tmp, filename: "#{id}.jpg", content_type: "image/jpeg", identify: false)
     rescue
       nil
-    ensure
-      tmp.close
-      tmp.unlink
     end
   end
 end
