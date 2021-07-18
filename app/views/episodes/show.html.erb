@@ -1,7 +1,9 @@
 <h1>
 <%= render(EpisodeTitleComponent.new(episode: @episode)) %>
 </h1>
-<%= link_to (@episode.id + 1), Episode.find(@episode.id + 1) %>
+<% if @episode.succ %>
+<%= link_to (@episode.succ.id), @episode.succ %>
+<% end %>
 <% @episode.hosts.each do |host| %>
   <div>
     <h2><%= host.name %></h2>
@@ -14,4 +16,3 @@
     <% end %>
   </div>
 <% end %>
-

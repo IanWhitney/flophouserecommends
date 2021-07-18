@@ -13,4 +13,10 @@ class Episode < ApplicationRecord
     hosts << host
     host
   end
+
+  def succ
+    Episode.find(id + 1)
+  rescue ActiveRecord::RecordNotFound
+    nil
+  end
 end
