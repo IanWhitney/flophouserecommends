@@ -6,4 +6,9 @@ class EpisodesController < ApplicationController
   def show
     @episode = Episode.find(params[:id])
   end
+
+  def latest
+    @episode = Episode.last
+    render :show
+  end
 end
