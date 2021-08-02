@@ -1,12 +1,16 @@
 <h1>
 <%= render(EpisodeTitleComponent.new(episode: @episode)) %>
 </h1>
-<% if @episode.succ %>
-<%= link_to (@episode.succ.id), @episode.succ %>
+<% if @episode.pred %>
+  <%= link_to "<< #{@episode.pred.id}", @episode.pred %>
 <% end %>
+<% if @episode.succ %>
+  <%= link_to "#{@episode.succ.id} >>", @episode.succ %>
+<% end %>
+<div class="flex flex-row flex-wrap gap-4">
 <% @episode.hosts.each do |host| %>
-  <div>
-    <h2><%= host.name %></h2>
+  <div class="flex-grow">
+    <h2 class="text-3xl"><%= host.name %></h2>
     <% if @episode.recommendations_for(host).any? %>
       <% @episode.recommendations_for(host).each do |recommendation| %>
         <%= render(MovieComponent.new(movie: recommendation.movie)) %>
@@ -16,3 +20,4 @@
     <% end %>
   </div>
 <% end %>
+</div>
