@@ -1,6 +1,6 @@
 class EpisodesController < ApplicationController
   def index
-    @episodes = Episode.all
+    @episodes = Episode.includes(:movie).all
   end
 
   def show

@@ -1,4 +1,10 @@
 <div>
   <%= render(HostNameComponent.new(host: @host)) %>
-  <%= render(EpisodeTitleComponent.with_collection(@host.episodes)) %>
+  <ul>
+    <% @host.episodes.each do |episode| %>
+      <li>
+        <%= render(EpisodeLinkComponent.new(episode: episode)) %>
+      </li>
+    <% end %>
+  </ul>
 </div>

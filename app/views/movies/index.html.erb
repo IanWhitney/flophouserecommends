@@ -1,12 +1,5 @@
+<ul>
 <% @movies.each do |movie| %>
-  <h2><%= movie.title %></h2>
-  <% if movie.episodes.any? %>
-    <h3>Watched For</h3>
-    <%= render(EpisodeTitleComponent.with_collection(movie.episodes)) %>
-  <% end %>
-
-  <% if movie.recommendations.any? %>
-    <h2>Recommended</h2>
-    <%= render(RecommendationComponent.with_collection(movie.recommendations)) %>
-  <% end %>
+  <li><%= link_to(movie.title, movie_path(movie)) %></li>
 <% end %>
+</ul>

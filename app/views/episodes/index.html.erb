@@ -1,1 +1,5 @@
-<%= render(EpisodeTitleComponent.with_collection(@episodes)) %>
+<ul>
+  <% @episodes.each do |episode| %>
+    <li><%= render(EpisodeTitleComponent.new(episode: episode)) %></li>
+  <% end %>
+</ul>
