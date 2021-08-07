@@ -30,14 +30,28 @@ class Episode < ApplicationRecord
   end
 
   def pred
-    Episode.find(id - 1)
-  rescue ActiveRecord::RecordNotFound
-    nil
+    if predecessors(1).present?
+      predecessors(1).first
+    end
+  end
+
+  def predecessors(count)
+    self.class
+      .where("id < #{id}")
+      .order("id desc")
+      .first(count)
   end
 
   def succ
-    Episode.find(id + 1)
-  rescue ActiveRecord::RecordNotFound
-    nil
+    if successors(1).present?
+      successors(1).first
+    end
+  end
+
+  def successors(count)
+    self.class
+      .where("id > #{id}")
+      .order("id asc")
+      .first(count)
   end
 end
