@@ -13,11 +13,28 @@
 
   <body>
     <div class="container">
-      <div>
-        The Flophouse Recommends
-      </div>
-      <div>
-        <%= yield %>
+      <h1 class="text-6xl p-9">The Flophouse Recommends</h1>
+      <div class="grid grid-cols-10 gap-4">
+        <div class="col-start-1 col-span-2">
+          <%= form_with url: search_episodes_path, method: :get do |form| %>
+            <%= form.label :query, "Search for Episode:", {"class" => "invisible"} %>
+            <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Episode" } %>
+            <%= form.submit "Search" %>
+          <% end %>
+          <%= form_with url: search_movies_path, method: :get do |form| %>
+            <%= form.label :query, "Search for Movie:", {"class" => "invisible"} %>
+            <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Movie" } %>
+            <%= form.submit "Search" %>
+          <% end %>
+          <%= form_with url: search_hosts_path, method: :get do |form| %>
+            <%= form.label :query, "Search for Host:", {"class" => "invisible"} %>
+            <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Host" } %>
+            <%= form.submit "Search" %>
+          <% end %>
+        </div>
+        <div class="col-start-3 col-span-8">
+          <%= yield %>
+        </div>
       </div>
     </div>
   </body>

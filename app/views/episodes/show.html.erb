@@ -1,39 +1,16 @@
-<div class="grid grid-cols-10 gap-4">
-  <div class="col-start-1 col-span-2">
-    <h1>
-      <%= render(EpisodeTitleComponent.new(episode: @episode)) %>
-    </h1>
-    <%= render(EpisodePaginationComponent.new(episode: @episode)) %>
-    <%= form_with url: search_episodes_path, method: :get do |form| %>
-      <%= form.label :query, "Search for Episode:", {"class" => "invisible"} %>
-      <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Episode" } %>
-      <%= form.submit "Search" %>
-    <% end %>
-    <%= form_with url: search_movies_path, method: :get do |form| %>
-      <%= form.label :query, "Search for Movie:", {"class" => "invisible"} %>
-      <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Movie" } %>
-      <%= form.submit "Search" %>
-    <% end %>
-    <%= form_with url: search_hosts_path, method: :get do |form| %>
-      <%= form.label :query, "Search for Host:", {"class" => "invisible"} %>
-      <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Host" } %>
-      <%= form.submit "Search" %>
-    <% end %>
-  </div>
-  <div class="col-start-3 col-span-8">
-    <div class="grid grid-cols-<%= @episode.hosts.count %> gap-4">
-      <% @episode.hosts.each do |host| %>
-        <div>
-          <h2 class="text-3xl"><%= host.name %></h2>
-          <% if @episode.recommendations_for(host).any? %>
-            <% @episode.recommendations_for(host).each do |recommendation| %>
-              <%= render(MovieComponent.new(movie: recommendation.movie)) %>
-            <% end %>
-          <% else %>
-            No recommendations made
-          <% end %>
-        </div>
+<h2><%= render(EpisodeTitleComponent.new(episode: @episode)) %></h2>
+<%= render(EpisodePaginationComponent.new(episode: @episode)) %>
+<div class="grid grid-cols-<%= @episode.hosts.count %> gap-4">
+  <% @episode.hosts.each do |host| %>
+    <div>
+      <h2><%= link_to(host.name, host) %></h2>
+      <% if @episode.recommendations_for(host).any? %>
+        <% @episode.recommendations_for(host).each do |recommendation| %>
+          <%= render(MovieComponent.new(movie: recommendation.movie)) %>
+        <% end %>
+      <% else %>
+        No recommendations made
       <% end %>
     </div>
-  </div>
+  <% end %>
 </div>

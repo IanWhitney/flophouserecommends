@@ -10,6 +10,14 @@ class Episode < ApplicationRecord
       .or(where("movies.title like ?", "%#{params}%"))
   end
 
+  def title
+    if movie.present?
+      movie.title
+    else
+      "No movie watched"
+    end
+  end
+
   def recommendations_for(host)
     recommendations.where(host: host)
   end

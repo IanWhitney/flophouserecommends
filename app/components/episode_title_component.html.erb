@@ -1,6 +1,1 @@
-Episode <%= @episode.id %>: 
-<% if @episode.movie.present? %>
-  <i><%= link_to(@episode.movie.title, @episode.movie) %></i>
-<% else %>
-  No movie watched
-<% end %>
+<%= link_to("Episode #{@episode.id}: #{@episode.title}", @episode) %>

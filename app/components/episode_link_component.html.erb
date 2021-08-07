@@ -1,8 +1,1 @@
-<a href="<%= episode_path(@episode) %>">
-  Episode <%= @episode.id %>: 
-  <% if @episode.movie.present? %>
-    <i><%= @episode.movie.title %></i>
-  <% else %>
-    No movie watched
-  <% end %>
-</a>
+<%= link_to("Episode #{@episode.id}: #{@episode.title}", @episode) %>

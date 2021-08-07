@@ -1,11 +1,29 @@
-<%= @movie.title %>
-
-<% if @movie.episodes.any? %>
-  <h2>Watched For</h2>
-  <%= render(EpisodeTitleComponent.with_collection(@movie.episodes)) %>
-<% end %>
-
-<% if @movie.recommendations.any? %>
-  <h2>Recommended</h2>
-  <%= render(RecommendationComponent.with_collection(@movie.recommendations)) %>
-<% end %>
+<h2><%= @movie.title %></h2>
+<div class="grid grid-cols-2 gap-4">
+  <div>
+    <% if @movie.episodes.any? %>
+      <h3>Watched For</h3>
+      <ul>
+        <% @movie.episodes.each do |episode| %>
+          <li><%= render(EpisodeTitleComponent.new(episode: episode)) %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    <% if @movie.recommendations.any? %>
+      <h3>Recommended By</h3>
+      <ul>
+      <% @movie.recommendations.each do |recommendation| %>
+        <li>
+          <%= link_to(recommendation.host.name, host_path(recommendation.host)) %> in
+          <%= render(EpisodeTitleComponent.new(episode: recommendation.episode)) %>
+        </li>
+      <% end %>
+      </ul>
+    <% end %>
+  </div>
+  <div>
+    <% if @movie.poster.attached? %>
+      <%= image_tag(url_for(@movie.poster), alt: "Poster for #{@movie.title}") %>
+    <% end %>
+  </div>
+</div>
