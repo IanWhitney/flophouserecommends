@@ -1,9 +1,6 @@
-<div class="top-0 p-8 w-screen text-6xl">
-  <h1>Episode <%= @episode.id %>: 
+Episode <%= @episode.id %>: 
 <% if @episode.movie.present? %>
   <i><%= link_to(@episode.movie.title, @episode.movie) %></i>
 <% else %>
   No movie watched
 <% end %>
-  </h1>
-</div>

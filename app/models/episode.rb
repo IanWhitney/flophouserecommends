@@ -3,6 +3,12 @@ class Episode < ApplicationRecord
   has_and_belongs_to_many :hosts, -> { order("hosts.id") }
   has_many :recommendations
 
+  def self.search(params)
+    joins(:movie)
+      .where("episodes.id = ?", params)
+      .or(where("movies.title like ?", "%#{params}%"))
+  end
+
   def recommendations_for(host)
     recommendations.where(host: host)
   end

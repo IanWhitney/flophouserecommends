@@ -1,0 +1,15 @@
+<nav aria-label="pagination">
+  <ul class="pagination">
+    <% if @episode.pred %>
+      <li>
+        <a href="<%= episode_path(@episode.pred) %>"><span class="invisible">episode </span><%= @episode.pred.id %></a>
+      </li>
+    <% end %>
+    <li><a href="" aria-current="page"><span class="invisible">episode </span><%= @episode.id %></a></li>
+    <% if @episode.succ %>
+      <li>
+        <a href="<%= episode_path(@episode.succ) %>"><span class="invisible">episode </span><%= @episode.succ.id %></a>
+      </li>
+    <% end %>
+  </ul>
+</nav>

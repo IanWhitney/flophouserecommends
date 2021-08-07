@@ -11,6 +11,11 @@ class Movie < ApplicationRecord
 
   scope :search_by_title, ->(search) { where("title like ?", "%#{search}%") }
 
+  def self.search(params)
+    where(id: params)
+      .or(search_by_title(params))
+  end
+
   private
 
   def imdb_entry
