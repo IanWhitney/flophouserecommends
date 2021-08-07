@@ -1434,9 +1434,9 @@ INSERT INTO movies VALUES(1419,'tt0082926','polyester','2021-06-30 20:20:04.7369
 INSERT INTO movies VALUES(1420,'tt11188624','film:567517','2021-06-30 20:20:05.609435','2021-07-01 13:02:32.033012','Seance');
 INSERT INTO movies VALUES(1421,'tt0065241','the-joke','2021-06-30 20:20:05.929259','2021-07-01 13:02:34.463961','The Joke');
 INSERT INTO movies VALUES(1422,'tt13061914','locked-down-2021','2021-07-03 22:06:01.545776','2021-07-03 22:06:01.690424','Locked Down');
-INSERT INTO movies VALUES(1423,'tt14581444','the-neutral-ground','2021-07-03 22:10:10.718085','2021-07-03 22:10:10.795087','The Neutral Ground');
-INSERT INTO movies VALUES(1424,'tt0083190','thief','2021-07-03 22:15:15.292299','2021-07-03 22:15:15.374994','Thief');
-INSERT INTO movies VALUES(1425,'tt8610436','the-sparks-brothers','2021-07-03 22:18:23.930028','2021-07-03 22:18:24.020119','The Sparks Brothers');
+INSERT INTO movies VALUES(1423,'tt14581444','the-neutral-ground','2021-07-03 22:10:10.718085','2021-08-07 18:35:18.462305','The Neutral Ground');
+INSERT INTO movies VALUES(1424,'tt0083190','thief','2021-07-03 22:15:15.292299','2021-08-07 18:35:19.578322','Thief');
+INSERT INTO movies VALUES(1425,'tt8610436','the-sparks-brothers','2021-07-03 22:18:23.930028','2021-08-07 18:35:20.566868','The Sparks Brothers');
 INSERT INTO movies VALUES(1426,'tt9735790','me-you-madness','2021-07-18 18:15:45.824688','2021-07-18 18:25:54.325140','#<ActiveStorage::Attached::Changes::CreateOne:0x000055edf151c518>');
 INSERT INTO movies VALUES(1427,'tt3480822','black-widow-2021','2021-07-18 18:15:46.664346','2021-07-18 18:15:46.744224','Black Widow');
 INSERT INTO movies VALUES(1428,'tt9288692','werewolves-within','2021-07-18 18:15:47.654317','2021-07-18 18:15:47.725741','Werewolves Within');
@@ -4146,19 +4146,13 @@ INSERT INTO episodes_hosts VALUES(344,63);
 INSERT INTO episodes_hosts VALUES(345,1);
 INSERT INTO episodes_hosts VALUES(345,2);
 INSERT INTO episodes_hosts VALUES(345,3);
-INSERT INTO episodes_hosts VALUES(346,1);
-INSERT INTO episodes_hosts VALUES(346,1);
-INSERT INTO episodes_hosts VALUES(346,2);
-INSERT INTO episodes_hosts VALUES(346,1);
-INSERT INTO episodes_hosts VALUES(346,2);
-INSERT INTO episodes_hosts VALUES(346,3);
-INSERT INTO episodes_hosts VALUES(346,1);
-INSERT INTO episodes_hosts VALUES(346,2);
-INSERT INTO episodes_hosts VALUES(346,3);
 INSERT INTO episodes_hosts VALUES(347,1);
 INSERT INTO episodes_hosts VALUES(347,2);
 INSERT INTO episodes_hosts VALUES(347,3);
 INSERT INTO episodes_hosts VALUES(347,4);
+INSERT INTO episodes_hosts VALUES(346,1);
+INSERT INTO episodes_hosts VALUES(346,2);
+INSERT INTO episodes_hosts VALUES(346,3);
 CREATE TABLE IF NOT EXISTS "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL);
 INSERT INTO active_storage_blobs VALUES(1422,'rkeyge328rx6kgvbfjsq3hhljp1o','17.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',36368,'9ERqWIuVby3wNWuBmc8F7Q==','2021-07-01 12:11:05.775955');
 INSERT INTO active_storage_blobs VALUES(1423,'kuegdp3yk8dvegun7idq86v2fmqw','96.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',27557,'YlzEzTROT+IopYP9Ly+4Eg==','2021-07-01 12:11:08.304230');
@@ -5582,15 +5576,15 @@ INSERT INTO active_storage_blobs VALUES(2841,'8ravzma38f5magnyxl5qv78xsduz','336
 INSERT INTO active_storage_blobs VALUES(2842,'wl8e9vj0fu2tgmvwnm847ewcglja','338.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',25452,'Ak+VvB3tg4ChNtRHtjTkFQ==','2021-07-01 13:57:49.714071');
 INSERT INTO active_storage_blobs VALUES(2843,'hu3dlcau2ployjevm53qqgtvl49u','1412.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',21715,'FIYFYk1WdArvAKWfQZ1XmQ==','2021-07-01 13:57:51.115904');
 INSERT INTO active_storage_blobs VALUES(2844,'u4mp3i35lwqlsepbs60kn3m4dura','.jpg','image/jpeg','{"identified":true}','amazon',24432,'smL08Bx/22mY95ouDzcp+w==','2021-07-03 22:06:01.630527');
-INSERT INTO active_storage_blobs VALUES(2845,'kes2b75gmfvq864ofh6s1dhi8p4g','.jpg','image/jpeg','{"identified":true}','amazon',5114,'08WEptGrBwCWX4nMqq/ELw==','2021-07-03 22:10:10.760518');
-INSERT INTO active_storage_blobs VALUES(2846,'cddkjeqoyy26fm6tfr4xop2xya61','.jpg','image/jpeg','{"identified":true}','amazon',36603,'xsQTI9XKweAtVlHy6rxFZw==','2021-07-03 22:15:15.344327');
-INSERT INTO active_storage_blobs VALUES(2847,'xwgam1trnquzs91jwf33ykcemuvl','.jpg','image/jpeg','{"identified":true}','amazon',18210,'UR02XsSsi/SIqb4o6z/i8g==','2021-07-03 22:18:23.985710');
 INSERT INTO active_storage_blobs VALUES(2848,'6f7vtcjdbhe61ut3ro8hg5uby88g','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',25530,'gMr0CDlRYEsr3armhuIh2A==','2021-07-18 18:15:46.711982');
 INSERT INTO active_storage_blobs VALUES(2849,'0iu5wglol5vy929kkoh7ed8ylf2v','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',27227,'BHv7LQ3Xyi/Of5nOPZ0Ozw==','2021-07-18 18:15:47.693270');
 INSERT INTO active_storage_blobs VALUES(2850,'mdp8iwmq9zh5lujs5tvmg8jv90vh','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',20812,'7n6SWMyfSAomPTSbJviQXA==','2021-07-18 18:15:48.736256');
 INSERT INTO active_storage_blobs VALUES(2851,'uukkeh4atsmfnobbnzgs5v3cjvin','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',36664,'dqj8r1L4zXxFi4sLoIKH4A==','2021-07-18 18:15:49.467227');
 INSERT INTO active_storage_blobs VALUES(2852,'z58dsu0m3ewvlowqyvzbk2hem2yt','.jpg','image/jpeg','{"identified":true}','amazon',29787,'2jeHQmh4cESfcjo9h3TQHg==','2021-07-18 18:15:50.371196');
 INSERT INTO active_storage_blobs VALUES(2853,'z5sfnm9b15t8j4wshroy2r1az2lm','1426.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',28495,'V+zYuZiEM/K68WAAdBYKdw==','2021-07-18 18:25:54.283727');
+INSERT INTO active_storage_blobs VALUES(2854,'ojevs57ewsn96m5y9o9lo0c79orm','1423.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',5114,'08WEptGrBwCWX4nMqq/ELw==','2021-08-07 18:35:18.384127');
+INSERT INTO active_storage_blobs VALUES(2855,'ukxk99lksbxs2sfrr3hgg2254byi','1424.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',36603,'xsQTI9XKweAtVlHy6rxFZw==','2021-08-07 18:35:19.512478');
+INSERT INTO active_storage_blobs VALUES(2856,'z9564e8pvby3tnn3n87zl3ly6ms5','1425.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',18210,'UR02XsSsi/SIqb4o6z/i8g==','2021-08-07 18:35:20.494588');
 CREATE TABLE IF NOT EXISTS "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
 FOREIGN KEY ("blob_id")
   REFERENCES "active_storage_blobs" ("id")
@@ -7017,15 +7011,15 @@ INSERT INTO active_storage_attachments VALUES(2841,'poster','Movie',336,2841,'20
 INSERT INTO active_storage_attachments VALUES(2842,'poster','Movie',338,2842,'2021-07-01 13:57:49.741361');
 INSERT INTO active_storage_attachments VALUES(2843,'poster','Movie',1412,2843,'2021-07-01 13:57:51.153547');
 INSERT INTO active_storage_attachments VALUES(2844,'poster','Movie',1422,2844,'2021-07-03 22:06:01.662446');
-INSERT INTO active_storage_attachments VALUES(2845,'poster','Movie',1423,2845,'2021-07-03 22:10:10.777520');
-INSERT INTO active_storage_attachments VALUES(2846,'poster','Movie',1424,2846,'2021-07-03 22:15:15.361759');
-INSERT INTO active_storage_attachments VALUES(2847,'poster','Movie',1425,2847,'2021-07-03 22:18:24.001217');
 INSERT INTO active_storage_attachments VALUES(2848,'poster','Movie',1427,2848,'2021-07-18 18:15:46.726165');
 INSERT INTO active_storage_attachments VALUES(2849,'poster','Movie',1428,2849,'2021-07-18 18:15:47.711696');
 INSERT INTO active_storage_attachments VALUES(2850,'poster','Movie',1429,2850,'2021-07-18 18:15:48.752722');
 INSERT INTO active_storage_attachments VALUES(2851,'poster','Movie',1430,2851,'2021-07-18 18:15:49.482417');
 INSERT INTO active_storage_attachments VALUES(2852,'poster','Movie',1431,2852,'2021-07-18 18:15:50.409339');
 INSERT INTO active_storage_attachments VALUES(2853,'poster','Movie',1426,2853,'2021-07-18 18:25:54.304249');
+INSERT INTO active_storage_attachments VALUES(2854,'poster','Movie',1423,2854,'2021-08-07 18:35:18.443314');
+INSERT INTO active_storage_attachments VALUES(2855,'poster','Movie',1424,2855,'2021-08-07 18:35:19.557967');
+INSERT INTO active_storage_attachments VALUES(2856,'poster','Movie',1425,2856,'2021-08-07 18:35:20.528803');
 CREATE TABLE IF NOT EXISTS "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
 FOREIGN KEY ("blob_id")
   REFERENCES "active_storage_blobs" ("id")
@@ -7033,8 +7027,8 @@ FOREIGN KEY ("blob_id")
 DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('movies',1431);
 INSERT INTO sqlite_sequence VALUES('hosts',63);
-INSERT INTO sqlite_sequence VALUES('active_storage_blobs',2853);
-INSERT INTO sqlite_sequence VALUES('active_storage_attachments',2853);
+INSERT INTO sqlite_sequence VALUES('active_storage_blobs',2856);
+INSERT INTO sqlite_sequence VALUES('active_storage_attachments',2856);
 CREATE UNIQUE INDEX "index_movies_on_imdb_id" ON "movies" ("imdb_id");
 CREATE INDEX "index_recommendations_on_episode_id" ON "recommendations" ("episode_id");
 CREATE INDEX "index_recommendations_on_host_id" ON "recommendations" ("host_id");
