@@ -4,7 +4,8 @@ class Episode < ApplicationRecord
   has_many :recommendations
 
   def self.search(params)
-    joins(:movie)
+    includes(:movie)
+      .joins(:movie)
       .where("episodes.id = ?", params)
       .or(where("movies.title like ?", "%#{params}%"))
   end

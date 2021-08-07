@@ -12,17 +12,6 @@ class MoviesController < ApplicationController
   end
 
   def search
-    query = params.permit(:query)[:query]
-    results = Movie.search(query)
-    case results.count
-    when 0
-      redirect_to root_path
-    when 1
-      @movie = results.first
-      render "show"
-    else
-      @movies = results
-      render "index"
-    end
+    super(Movie, :@movie, :@movies)
   end
 end
