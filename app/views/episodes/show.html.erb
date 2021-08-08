@@ -3,7 +3,7 @@
 <div class="grid grid-cols-<%= @episode.hosts.count %> gap-4">
   <% @episode.hosts.each do |host| %>
     <div>
-      <h2><%= link_to(host.name, host) %></h2>
+      <h3><%= link_to(host.name, host) %></h3>
       <% if @episode.recommendations_for(host).any? %>
         <% @episode.recommendations_for(host).each do |recommendation| %>
           <%= render(MovieComponent.new(movie: recommendation.movie)) %>
