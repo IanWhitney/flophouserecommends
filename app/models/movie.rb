@@ -16,6 +16,14 @@ class Movie < ApplicationRecord
       .or(search_by_title(params))
   end
 
+  def recommended?
+    recommendations.any?
+  end
+
+  def recommendations
+    @recommendations ||= Recommendation.where(movie: self)
+  end
+
   private
 
   def imdb_entry
