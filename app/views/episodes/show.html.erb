@@ -1,9 +1,9 @@
-<h2><%= render(EpisodeTitleComponent.new(episode: @episode)) %></h2>
 <%= render(EpisodePaginationComponent.new(episode: @episode)) %>
+<h2 class="text-4xl font-bold text-yellow-400"><%= render(EpisodeTitleComponent.new(episode: @episode)) %></h2>
 <div class="grid grid-cols-<%= @episode.hosts.count %> gap-4">
   <% @episode.hosts.each do |host| %>
     <div>
-      <h3><%= link_to(host.name, host) %></h3>
+      <h3 class="text-2xl font-bold text-green-600"><%= link_to(host.name, host) %></h3>
       <% if @episode.recommendations_for(host).any? %>
         <% @episode.recommendations_for(host).each do |recommendation| %>
           <%= render(MovieComponent.new(movie: recommendation.movie)) %>

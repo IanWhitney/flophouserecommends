@@ -1,14 +1,16 @@
 <nav role="navigation" aria-label="Pagination" class="flex">
-  <ul class="flex">
+  <ul class="flex space-x-2">
     <% @paged_episodes.each do |episode| %>
       <% if episode == @episode %>
-        <li aria-current="true">
-          <strong><span class="invisible">Current episode </span><%= episode.id %></strong>
+        <li aria-current="true" class="<%= @current_classes.join(" ") %>">
+          <strong><span class="sr-only">Current episode </span><%= episode.id %></strong>
         </li>
       <% else %>
-        <li>
-          <a href="<%= episode_path(episode) %>" aria-label="Go to episode <%= episode.id %>"><span class="invisible">Go to episode </span><%= episode.id %></a>
-        </li>
+        <a href="<%= episode_path(episode) %>" aria-label="Go to episode <%= episode.id %>">
+          <li class="<%= @go_to_classes.join(" ") %>">
+            <span class="sr-only">Go to episode </span><%= episode.id %>
+          </li>
+        </a>
       <% end %>
     <% end %>
   </ul>

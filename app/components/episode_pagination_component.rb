@@ -14,5 +14,8 @@ class EpisodePaginationComponent < ViewComponent::Base
     end
 
     @paged_episodes = [succ.reverse, episode, pred].flatten
+    default_classes = %w[text-xs rounded-lg text-center px-10 py-2]
+    @current_classes = default_classes.dup << "bg-yellow-400"
+    @go_to_classes = default_classes.dup << "bg-indigo-400"
   end
 end
