@@ -1,5 +1,5 @@
 <nav role="navigation" aria-label="Pagination" class="flex">
-  <ul class="flex space-x-2">
+  <ul class="flex space-x-2 font-sans">
     <% @paged_episodes.each do |episode| %>
       <% if episode == @episode %>
         <li aria-current="true" class="<%= @current_classes.join(" ") %>">

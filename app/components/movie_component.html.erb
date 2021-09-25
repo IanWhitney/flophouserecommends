@@ -1,6 +1,6 @@
 <div class="bg-orange-100 rounded-lg mb-6 p-2 ring-2 ring-red-800 ring-opacity-30">
   <div class="text-center">
-    <%= image_tag(url_for(@movie.poster), alt: "Poster for #{@movie.title}", class: "inline") %>
+    <%= link_to(image_tag(url_for(@movie.poster), alt: "Poster for #{@movie.title}", class: "inline"), @movie) %>
   </div>
   <h4 class="text-xl font-semibold tracking-wide text-center"><i><%= link_to(@movie.title, @movie) %></i></h4>
   <% if @movie.recommended? %>

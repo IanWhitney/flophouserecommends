@@ -1,8 +1,8 @@
-<h2 class="text-4xl font-bold text-yellow-400"><%= @movie.title %></h2>
+<h2 class="text-4xl font-bold text-orange-800"><%= @movie.title %></h2>
 <div class="flex gap-4 flex-col lg:flex-row">
   <div>
     <% if @movie.episodes.any? %>
-      <h3 class="text-2xl font-bold text-green-600">Watched For</h3>
+      <h3 class="text-2xl font-bold text-lime-700">Watched For</h3>
       <ul>
         <% @movie.episodes.each do |episode| %>
           <li><%= render(EpisodeTitleComponent.new(episode: episode)) %></li>
@@ -10,7 +10,7 @@
       </ul>
     <% end %>
     <% if @movie.recommendations.any? %>
-      <h3 class="text-2xl font-bold text-green-600">Recommended By</h3>
+      <h3 class="text-2xl font-bold text-lime-700">Recommended By</h3>
       <ul>
       <% @movie.recommendations.each do |recommendation| %>
         <li>

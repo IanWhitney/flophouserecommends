@@ -1,9 +1,9 @@
 <%= render(EpisodePaginationComponent.new(episode: @episode)) %>
-<h2 class="font-serif text-4xl font-bold text-orange-800"><%= render(EpisodeTitleComponent.new(episode: @episode)) %></h2>
+<h2 class="text-4xl font-bold text-orange-800"><%= render(EpisodeTitleComponent.new(episode: @episode)) %></h2>
 <div class="flex gap-8 flex-col lg:flex-row">
   <% @episode.hosts.each do |host| %>
     <div>
-      <h3 class="text-2xl text-center font-serif font-bold"><%= link_to(host.name, host) %></h3>
+      <h3 class="text-2xl text-center font-bold text-lime-700"><%= link_to(host.name, host) %></h3>
       <% if @episode.recommendations_for(host).any? %>
         <% @episode.recommendations_for(host).each do |recommendation| %>
           <%= render(MovieComponent.new(movie: recommendation.movie)) %>
