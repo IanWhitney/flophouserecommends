@@ -14,36 +14,39 @@
   <body>
     <div class="container">
       <h1 role="banner" class="text-6xl font-bold text-indigo-900">The Flophouse Recommends</h1>
-      <div class="grid grid-cols-10 gap-4">
-        <div class="col-start-1 col-span-3">
-          <div role="search">
+      <div class="flex flex-col md:flex-row gap-4">
+        <div class="order-last md:order-first">
+          <p>
+            Most episodes of the <a href="https://www.flophousepodcast.com/">The Flop House Podcast</a> end with everyone's favorite segment, recommendations of movies you might actually like. Here at The Flop House Recommends you can search all the recommendations by episode, host or movie.
+          </p>
+          <div role="search" class="grid gap-y-2 divide-y divide-green-500">
+            <div>
             <%= form_with url: search_episodes_path, method: :get, role: "search" do |form| %>
-              <%= form.label :query, "Search for Episode:", {"class" => "hidden"} %>
+              <p>Search for an episode either by its number or the name of the movie watched</p>
+              <%= form.label :query, "Search for Episode:", {"class" => "sr-only"} %>
               <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Episode" } %>
               <%= form.submit "Search" %>
             <% end %>
+            </div>
+            <div>
             <%= form_with url: search_movies_path, method: :get, role: "search" do |form| %>
-              <%= form.label :query, "Search for Movie:", {"class" => "hidden"} %>
+              <p>Search for a movie by its title to see who recommended it and in which episodes</p>
+              <%= form.label :query, "Search for Movie:", {"class" => "sr-only"} %>
               <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Movie" } %>
               <%= form.submit "Search" %>
             <% end %>
+            </div>
+            <div>
             <%= form_with url: search_hosts_path, method: :get, role: "search" do |form| %>
-              <%= form.label :query, "Search for Host:", {"class" => "hidden"} %>
+              <p>Search for a host by their name to see all their recommendations</p>
+              <%= form.label :query, "Search for Host:", {"class" => "sr-only"} %>
               <%= form.text_field :query, { "aria-autocomplete" => "none", "autocomplete" => "off", "type" => "search", "placeholder" => "Search for Host" } %>
               <%= form.submit "Search" %>
             <% end %>
+            </div>
           </div>
-          <p>
-            The hosts of <a href="https://www.flophousepodcast.com/">The Flop House Podcast</a> recommend movies that you might actually like. 
-            This site lists all of their recommendations.
-          </p>
-          <ul>
-            <li>Search for a movie by its title to see who recommended it and in which episodes</li>
-            <li>Search for an episode either by its number or the name of the movie watched</li>
-            <li>Search for a host by their name to see all their recommendations</li>
-          </ul>
         </div>
-        <div class="col-start-4 col-span-7" role="main" id="main">
+        <div class="flex-grow order-first md:order-last" role="main" id="main">
           <%= yield %>
         </div>
       </div>

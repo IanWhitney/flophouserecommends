@@ -1,6 +1,6 @@
 <%= render(EpisodePaginationComponent.new(episode: @episode)) %>
 <h2 class="text-4xl font-bold text-yellow-400"><%= render(EpisodeTitleComponent.new(episode: @episode)) %></h2>
-<div class="grid grid-cols-<%= @episode.hosts.count %> gap-4">
+<div class="flex gap-4 flex-col lg:flex-row">
   <% @episode.hosts.each do |host| %>
     <div>
       <h3 class="text-2xl font-bold text-green-600"><%= link_to(host.name, host) %></h3>
