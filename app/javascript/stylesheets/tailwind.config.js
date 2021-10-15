@@ -9,8 +9,8 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       orange: colors.orange,
-      red: colors.red,
       lime: colors.lime,
+      gray: colors.coolGray,
     }
   },
   variants: {

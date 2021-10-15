@@ -1,4 +1,4 @@
-<div class="bg-orange-100 rounded-lg mb-6 p-2 ring-2 ring-red-800 ring-opacity-30">
+<div class="bg-gray-50 rounded-lg mb-6 p-2">
   <div class="text-center">
     <%= link_to(image_tag(url_for(@movie.poster), alt: "Poster for #{@movie.title}", class: "inline"), @movie) %>
   </div>
@@ -9,10 +9,10 @@
     </p>
   <% end %>
   <ul class="mt-2 flex justify-between space-x-2">
-    <li class="bg-red-100 rounded-lg p-1 ring-1 ring-orange-800 text-xs text-center">
+    <li class="bg-gray-200 rounded-lg p-1 text-xs text-center">
       <%= link_to("IMDb", "https://www.imdb.com/title/#{@movie.imdb_id}") if @movie.imdb_id %>
     </li>
-    <li class="bg-red-100 rounded-lg p-1 ring-1 ring-orange-800 text-xs text-center">
+    <li class="bg-gray-200 rounded-lg p-1 text-xs text-center">
       <%= link_to("Letterboxd", "https://letterboxd.com/film/#{@movie.letterboxd_id}") if @movie.letterboxd_id %>
     </li>
   </ul>

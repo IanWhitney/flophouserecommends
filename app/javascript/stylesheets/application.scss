@@ -2,6 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url(http://fonts.googleapis.com/css?family=Crete+Round);
+h1,h2,h3,h4,h5,h6{font-family:'Crete Round'};
+
 a {
   // color: #0000FF;
   text-decoration: underline;
