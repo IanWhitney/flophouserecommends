@@ -11,8 +11,7 @@ class ApplicationController < ActionController::Base
     when 0
       redirect_to root_path
     when 1
-      instance_variable_set(singular, results.first)
-      render "show"
+      redirect_to action: "show", id: results.first
     else
       instance_variable_set(plural, results)
       render "index"
