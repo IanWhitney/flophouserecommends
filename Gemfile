@@ -15,21 +15,12 @@ gem "view_component", require: "view_component/engine"
 gem "webpacker", "~> 5.0"
 
 group :development, :test do
-  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "standard"
 end
 
 group :development do
   gem "listen", "~> 3.3"
-  gem "rack-mini-profiler", "~> 2.0"
   gem "spring"
-  gem "web-console", ">= 4.1.0"
-end
-
-group :test do
-  gem "capybara", ">= 3.26"
-  gem "selenium-webdriver"
-  gem "webdrivers"
 end
 
 gem "tailwindcss-rails", "~> 0.3.3"
