@@ -9,4 +9,11 @@ COPY Gemfile Gemfile.lock ./
 RUN bundle install --binstubs
 COPY . .
 
-# CMD rails s
+RUN RAILS_ENV=development rails webpacker:compile
+RUN RAILS_ENV=production rails webpacker:compile
+
+ENV RAILS_ENV="development"
+
+ENTRYPOINT ["./script/_docker_entrypoint"]
+
+CMD ["rails", "server", "-b", "0.0.0.0"]
