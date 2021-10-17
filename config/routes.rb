@@ -19,6 +19,4 @@ Rails.application.routes.draw do
 
   resources :about, only: [:index] do
   end
-
-  # match "*path", via: :all, to: redirect("/404")
 end
