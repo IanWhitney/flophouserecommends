@@ -1,24 +1,21 @@
-# README
+# flophouserecommends.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Display and searching of movies recommended by hosts of [The Flop House Podcast](https://www.flophousepodcast.com/).
 
-Things you may want to cover:
+Rails, using Sqlite as the database, running in Docker.
 
-* Ruby version
+## Setup
 
-* System dependencies
+- Clone repo
+- `script/setup`
 
-* Configuration
+## Running Locally
 
-* Database creation
+After running setup
 
-* Database initialization
+`docker run --rm -it -v "$PWD":/app -p 127.0.0.1:3000:3000 fhr:latest`
 
-* How to run the test suite
+## Deployment
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Have my Heroku credentials (if you are not me, this is a problem)
+- `heroku container:push web && heroku container:release web`
