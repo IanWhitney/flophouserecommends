@@ -16,6 +16,16 @@ class Movie < ApplicationRecord
       .or(search_by_title(params))
   end
 
+  def self.most_recommended
+    find(
+      Recommendation
+      .group(:movie_id)
+      .count
+      .max_by { |x| x.last }
+      .first
+    )
+  end
+
   def recommended?
     recommendations.any?
   end

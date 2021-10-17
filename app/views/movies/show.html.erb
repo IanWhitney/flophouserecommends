@@ -1,4 +1,6 @@
-<h2 class="text-4xl font-bold text-orange-800"><%= @movie.title %></h2>
+<h2 class="text-4xl font-bold text-lime-700 py-3">
+  <%= @movie.title %>
+</h2>
 <div class="flex gap-4 flex-col lg:flex-row">
   <div>
     <% if @movie.episodes.any? %>

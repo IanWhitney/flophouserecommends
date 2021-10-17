@@ -1,0 +1,18 @@
+<h2 class="text-4xl font-bold text-lime-700 py-3">
+  About <%= link_to("Flophouserecommends.com", root_path) %>
+</h2>
+<p class="w-96 py-2">
+  Most episodes of the <a href="https://www.flophousepodcast.com/">The Flop House Podcast</a> end with everyone's favorite segment, recommendations of movies you might actually like.
+</p>
+<p class="w-96 py-2">
+  Here at <a href="/">The Flop House Recommends</a> you can see every reccommendation made by the hosts and their guests.
+</p>
+<p class="w-96 py-2">
+This site is maintained by Ian Whitney. If you want to get in touch you could try <a href="https://twitter.com/iwhitney/">Twitter</a>, <a href="https://ianwhitney.micro.blog/">Micro.blog</a> or this site's repo on <a href="https://github.com/IanWhitney/flophouserecommends.com/">Github</a>.
+</p>
+<p class="w-96 py-2">
+As of now there have been <%= link_to("#{Movie.count} movies", movies_path) %> recommended or watched by <%= link_to("#{Host.count} hosts", hosts_path) %> across <%= link_to("#{Episode.count} episodes", episodes_path) %>. The most recommended movie is <i><%= link_to(Movie.most_recommended.title, Movie.most_recommended) %></i>.
+</p>
+<p class="w-96 py-2">
+  Head back to <%= link_to("the recommendations", root_path) %>.
+</p>
