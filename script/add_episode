@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# script/add_episode: Runs the rake task to add the latest episode
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+docker run \
+  --rm \
+  -it \
+  -v "$PWD":/app \
+  fhr:latest \
+  rails episode:add
