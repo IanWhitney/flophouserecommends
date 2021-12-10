@@ -1,5 +1,0 @@
-#!/bin/sh
-#
-if [ "$SKIP_HOOKS" != "true" ]; then
-  docker run --rm -t -v "$PWD":/app --entrypoint /app/script/_lint fhr:latest
-fi
