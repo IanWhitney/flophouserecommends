@@ -1,4 +1,4 @@
-FROM ruby:3
+FROM ruby:3.0.3
 
 # sqlite3
 RUN apt-get update && \
@@ -27,7 +27,6 @@ RUN rails yarn install
 COPY . .
 
 RUN RAILS_ENV=development rails webpacker:compile
-RUN RAILS_ENV=production rails webpacker:compile
 
 ENV RAILS_ENV="development"
 
