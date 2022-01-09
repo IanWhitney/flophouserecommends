@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# script/setup: Tells Docker to setup the project by configuring YAML config files
+# & getting and building Docker images.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+heroku container:push web -a afternoon-hollows-06212
+heroku container:release web -a afternoon-hollows-06212
