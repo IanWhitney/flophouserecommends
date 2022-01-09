@@ -27,6 +27,7 @@ RUN rails yarn install
 COPY . .
 
 RUN RAILS_ENV=development rails webpacker:compile
+RUN RAILS_ENV=production rails webpacker:compile
 
 ENV RAILS_ENV="development"
 
