@@ -23,6 +23,7 @@ EXPOSE 3000
 ENV MAKE="make --jobs 8"
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
+COPY package.json yarn.lock ./
 RUN rails yarn install
 COPY . .
 
