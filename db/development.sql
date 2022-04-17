@@ -1602,6 +1602,8 @@ INSERT INTO hosts VALUES(67,'Dave Jeser','2022-02-04 00:38:58.212991','2022-02-0
 INSERT INTO hosts VALUES(68,'Adam Rex','2022-02-20 23:32:08.775680','2022-02-20 23:32:08.775680');
 INSERT INTO hosts VALUES(69,'Alison Rosen','2022-03-06 15:18:01.991273','2022-03-06 15:18:01.991273');
 INSERT INTO hosts VALUES(70,'Chuck Bryant','2022-03-12 17:09:16.336918','2022-03-12 17:09:16.336918');
+INSERT INTO hosts VALUES(71,'Joel Hodgson','2022-04-17 02:16:20.902662','2022-04-17 02:16:20.902662');
+INSERT INTO hosts VALUES(72,'Matt McGinnis','2022-04-17 02:16:21.049832','2022-04-17 02:16:21.049832');
 CREATE TABLE IF NOT EXISTS "episodes" ("id" integer NOT NULL PRIMARY KEY, "movie_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_5113569389"
 FOREIGN KEY ("movie_id")
   REFERENCES "movies" ("id")
@@ -4414,6 +4416,8 @@ INSERT INTO episodes_hosts VALUES(365,3);
 INSERT INTO episodes_hosts VALUES(366,1);
 INSERT INTO episodes_hosts VALUES(366,2);
 INSERT INTO episodes_hosts VALUES(366,3);
+INSERT INTO episodes_hosts VALUES(340,71);
+INSERT INTO episodes_hosts VALUES(340,72);
 CREATE TABLE IF NOT EXISTS "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL);
 INSERT INTO active_storage_blobs VALUES(1422,'rkeyge328rx6kgvbfjsq3hhljp1o','17.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',36368,'9ERqWIuVby3wNWuBmc8F7Q==','2021-07-01 12:11:05.775955');
 INSERT INTO active_storage_blobs VALUES(1423,'kuegdp3yk8dvegun7idq86v2fmqw','96.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',27557,'YlzEzTROT+IopYP9Ly+4Eg==','2021-07-01 12:11:08.304230');
@@ -7461,7 +7465,7 @@ FOREIGN KEY ("blob_id")
 );
 DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('movies',1519);
-INSERT INTO sqlite_sequence VALUES('hosts',70);
+INSERT INTO sqlite_sequence VALUES('hosts',72);
 INSERT INTO sqlite_sequence VALUES('active_storage_blobs',2943);
 INSERT INTO sqlite_sequence VALUES('active_storage_attachments',2943);
 CREATE UNIQUE INDEX "index_movies_on_imdb_id" ON "movies" ("imdb_id");
