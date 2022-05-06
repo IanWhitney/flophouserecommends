@@ -675,7 +675,7 @@ INSERT INTO movies VALUES(660,'tt0089746','the-funeral-1996','2021-06-30 20:13:4
 INSERT INTO movies VALUES(661,'tt0089880','rambo-first-blood-part-ii','2021-06-30 20:13:44.553222','2021-07-01 12:24:57.623459','Rambo: First Blood Part II');
 INSERT INTO movies VALUES(662,'tt0089885','re-animator','2021-06-30 20:13:44.714923','2021-07-01 12:24:59.871465','Re-Animator');
 INSERT INTO movies VALUES(663,'tt0089907','the-return-of-the-living-dead','2021-06-30 20:13:44.855292','2021-07-01 12:25:02.176160','The Return of the Living Dead');
-INSERT INTO movies VALUES(664,'tt0089941','unstoppable-2010','2021-06-30 20:13:44.999275','2021-07-01 12:25:04.443010','Runaway Train');
+INSERT INTO movies VALUES(664,'tt0089941','runaway-train','2021-06-30 20:13:44.999275','2022-05-06 14:23:00.224278','Runaway Train');
 INSERT INTO movies VALUES(665,'tt0090327','witchboard','2021-06-30 20:13:45.143197','2021-07-01 12:25:06.720786','Witchboard');
 INSERT INTO movies VALUES(666,'tt0090837','chopping-mall','2021-06-30 20:13:45.291221','2021-07-01 12:25:09.001083','Chopping Mall');
 INSERT INTO movies VALUES(667,'tt0090915','dead-end-drive-in','2021-06-30 20:13:45.450063','2021-07-01 12:25:11.237986','Dead End Drive-In');
