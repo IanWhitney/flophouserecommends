@@ -1389,7 +1389,7 @@ INSERT INTO movies VALUES(1374,'tt7557108','saint-maud','2021-06-30 20:15:38.220
 INSERT INTO movies VALUES(1375,'tt7713068','birds-of-prey-and-the-fantabulous-emancipation-of-one-harley-quinn','2021-06-30 20:15:38.372458','2021-07-01 13:00:50.834351','Birds of Prey');
 INSERT INTO movies VALUES(1376,'tt7784604','hereditary','2021-06-30 20:15:38.524182','2021-07-01 13:00:53.358214','Hereditary');
 INSERT INTO movies VALUES(1377,'tt7798634','ready-or-not-2019','2021-06-30 20:15:38.672697','2021-07-01 13:00:55.852580','Ready or Not');
-INSERT INTO movies VALUES(1378,'tt7908628','what-we-do-in-the-shadows','2021-06-30 20:15:38.831259','2021-07-01 13:00:58.203940','What We Do in the Shadows');
+INSERT INTO movies VALUES(1378,'tt7908628',NULL,'2021-06-30 20:15:38.831259','2022-05-06 14:25:51.900054','What We Do in the Shadows');
 INSERT INTO movies VALUES(1379,'tt7914416','one-cut-of-the-dead','2021-06-30 20:15:38.979022','2021-07-01 13:01:00.516735','Kamera wo tomeruna!');
 INSERT INTO movies VALUES(1380,'tt7979580','the-mitchells-vs-the-machines','2021-06-30 20:15:39.445210','2021-07-01 13:01:02.872966','The Mitchells vs the Machines');
 INSERT INTO movies VALUES(1381,'tt8155182','leprechaun-returns','2021-06-30 20:15:39.621203','2021-07-01 13:01:05.180097','Leprechaun Returns');
