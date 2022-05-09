@@ -4,7 +4,9 @@ class HostsController < ApplicationController
   end
 
   def show
-    @host = Host.find(params[:id])
+    @host = Host.includes(
+      episodes: [:movie, recommendations: [:movie, :host]]
+    ).find(params[:id])
   end
 
   def search

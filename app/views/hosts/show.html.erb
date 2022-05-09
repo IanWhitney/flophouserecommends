@@ -4,7 +4,17 @@
 <ul>
   <% @host.episodes.each do |episode| %>
     <li>
-      <%= render(EpisodeLinkComponent.new(episode: episode)) %>
+      <span class="font-bold">
+        <%= render(EpisodeLinkComponent.new(episode: episode)) %>
+      </span>
+      <ul>
+        <% episode.recommendations.each do |rec| %>
+          <% next unless rec.host == @host %>
+          <li class="pl-5">
+            <%= link_to(rec.movie.title, rec.movie) %>
+          </li>
+        <% end %>
+      </ul>
     </li>
   <% end %>
 </ul>
