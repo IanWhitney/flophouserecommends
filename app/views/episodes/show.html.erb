@@ -4,8 +4,8 @@
   <% @episode.hosts.each do |host| %>
     <div>
       <h3 class="text-2xl text-center font-bold text-lime-600"><%= link_to(host.name, host) %></h3>
-      <% if @episode.recommendations_for(host).any? %>
-        <% @episode.recommendations_for(host).each do |recommendation| %>
+      <% if @episode.recommendations.any? { |r| r.host_id == host.id } %>
+        <% @episode.recommendations.select { |r| r.host_id == host.id }.each do |recommendation| %>
           <%= render(MovieComponent.new(movie: recommendation.movie)) %>
         <% end %>
       <% else %>

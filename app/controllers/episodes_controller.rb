@@ -4,15 +4,30 @@ class EpisodesController < ApplicationController
   end
 
   def show
-    @episode = Episode.find(params[:id])
+    @episode = _relation.find(params[:id])
   end
 
   def latest
-    @episode = Episode.last
+    @episode = _relation.last
     render :show
   end
 
   def search
     super(Episode, :@episode, :@episodes)
+  end
+
+  def _relation
+    Episode
+      .includes(
+        :hosts,
+        :movie,
+        recommendations: [
+          {
+            movie: {
+              poster_attachment: [:blob]
+            }
+          }
+        ]
+      )
   end
 end
