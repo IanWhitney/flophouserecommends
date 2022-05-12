@@ -1405,7 +1405,7 @@ INSERT INTO movies VALUES(1390,'tt8510350','satanic-panic-2019','2021-06-30 20:1
 INSERT INTO movies VALUES(1391,'tt8580274','eurovision-song-contest-the-story-of-fire-saga','2021-06-30 20:15:41.062395','2021-07-01 13:01:28.560145','Eurovision Song Contest: The Story of Fire Saga');
 INSERT INTO movies VALUES(1392,'tt8613070','portrait-of-a-lady-on-fire','2021-06-30 20:15:41.202617','2021-07-01 13:01:30.867805','Portrait of a Lady on Fire');
 INSERT INTO movies VALUES(1393,'tt8637428','the-farewell-2019','2021-06-30 20:15:41.360352','2021-07-01 13:01:33.203444','The Farewell');
-INSERT INTO movies VALUES(1394,'tt8663516','childs-play','2021-06-30 20:15:41.509212','2021-07-01 13:01:35.617483','Child''s Play');
+INSERT INTO movies VALUES(1394,'tt8663516','childs-play-2019','2021-06-30 20:15:41.509212','2022-05-12 00:03:28.628502','Child''s Play');
 INSERT INTO movies VALUES(1395,'tt8678982','death-by-metal','2021-06-30 20:15:41.659938','2021-07-01 13:01:37.960078','Death by Metal');
 INSERT INTO movies VALUES(1396,'tt8759834','selah-and-the-spades','2021-06-30 20:15:41.797134','2021-07-01 13:01:40.308747','Selah and the Spades');
 INSERT INTO movies VALUES(1397,'tt8772262','midsommar','2021-06-30 20:15:41.941266','2021-07-01 13:01:42.735316','Midsommar');
