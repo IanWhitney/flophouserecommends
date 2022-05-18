@@ -671,7 +671,7 @@ INSERT INTO movies VALUES(656,'tt0089175','fright-night','2021-06-30 20:13:43.80
 INSERT INTO movies VALUES(657,'tt0089507','louie-bluie','2021-06-30 20:13:43.975234','2021-07-01 12:24:48.584230','Louie Bluie');
 INSERT INTO movies VALUES(658,'tt0089530','mad-max-beyond-thunderdome','2021-06-30 20:13:44.116163','2021-07-01 12:24:50.839346','Mad Max Beyond Thunderdome');
 INSERT INTO movies VALUES(659,'tt0089689','9-deaths-of-the-ninja-1985','2021-06-30 20:13:44.258104','2021-07-01 12:24:53.125769','Nine Deaths of the Ninja');
-INSERT INTO movies VALUES(660,'tt0089746','the-funeral-1996','2021-06-30 20:13:44.406206','2021-07-01 12:24:55.378368','The Funeral');
+INSERT INTO movies VALUES(660,'tt0089746','the-funeral','2021-06-30 20:13:44.406206','2022-05-18 22:50:44.499867','The Funeral');
 INSERT INTO movies VALUES(661,'tt0089880','rambo-first-blood-part-ii','2021-06-30 20:13:44.553222','2021-07-01 12:24:57.623459','Rambo: First Blood Part II');
 INSERT INTO movies VALUES(662,'tt0089885','re-animator','2021-06-30 20:13:44.714923','2021-07-01 12:24:59.871465','Re-Animator');
 INSERT INTO movies VALUES(663,'tt0089907','the-return-of-the-living-dead','2021-06-30 20:13:44.855292','2021-07-01 12:25:02.176160','The Return of the Living Dead');
