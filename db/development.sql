@@ -1300,7 +1300,7 @@ INSERT INTO movies VALUES(1285,'tt4595882','can-you-ever-forgive-me','2021-06-30
 INSERT INTO movies VALUES(1286,'tt4633694','spider-man-into-the-spider-verse','2021-06-30 20:15:22.995350','2021-07-01 12:57:19.509046','Spider-Man: Into the Spider-Verse');
 INSERT INTO movies VALUES(1287,'tt4649466','kingsman-the-golden-circle','2021-06-30 20:15:23.152367','2021-07-01 12:57:21.839159','Kingsman: The Golden Circle');
 INSERT INTO movies VALUES(1288,'tt4651520','bad-moms','2021-06-30 20:15:23.300568','2021-07-01 12:57:24.175679','Bad Moms');
-INSERT INTO movies VALUES(1289,'tt4666726','christine-1983','2021-06-30 20:15:23.458637','2021-07-01 12:57:26.458863','Christine');
+INSERT INTO movies VALUES(1289,'tt4666726','christine-2016','2021-06-30 20:15:23.458637','2022-05-19 13:59:46.426574','Christine');
 INSERT INTO movies VALUES(1290,'tt4680182','colossal-2016','2021-06-30 20:15:23.608813','2021-07-01 12:57:28.761521','Colossal');
 INSERT INTO movies VALUES(1291,'tt4686844','the-death-of-stalin','2021-06-30 20:15:23.769253','2021-07-01 12:57:31.255638','The Death of Stalin');
 INSERT INTO movies VALUES(1292,'tt4695012','it-comes-at-night','2021-06-30 20:15:23.909268','2021-07-01 12:57:33.571369','It Comes at Night');
