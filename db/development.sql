@@ -526,7 +526,7 @@ INSERT INTO movies VALUES(511,'tt0064208','death-rides-a-horse','2021-06-30 20:1
 INSERT INTO movies VALUES(512,'tt0064253','downhill-racer','2021-06-30 20:13:21.870727','2021-07-01 12:19:13.043442','Downhill Racer');
 INSERT INTO movies VALUES(513,'tt0064437','the-honeymoon-killers','2021-06-30 20:13:22.014800','2021-07-01 12:19:15.327031','The Honeymoon Killers');
 INSERT INTO movies VALUES(514,'tt0064612','my-night-at-mauds','2021-06-30 20:13:22.178076','2021-07-01 12:19:17.680765','My Night at Maud''s');
-INSERT INTO movies VALUES(515,'tt0064921','the-salesman-2016','2021-06-30 20:13:22.332697','2021-07-01 12:19:20.008656','Salesman');
+INSERT INTO movies VALUES(515,'tt0064921','salesman','2021-06-30 20:13:22.332697','2022-05-19 14:02:19.761898','Salesman');
 INSERT INTO movies VALUES(516,'tt0065234','z','2021-06-30 20:13:22.484450','2021-07-01 12:19:22.310662','Z');
 INSERT INTO movies VALUES(517,'tt0065446','the-ballad-of-cable-hogue','2021-06-30 20:13:22.626331','2021-07-01 12:19:24.650745','The Ballad of Cable Hogue');
 INSERT INTO movies VALUES(518,'tt0065651','bed-and-board','2021-06-30 20:13:22.794473','2021-07-01 12:19:26.903966','Domicile conjugal');
@@ -1204,7 +1204,7 @@ INSERT INTO movies VALUES(1189,'tt2554274','crimson-peak','2021-06-30 20:15:07.1
 INSERT INTO movies VALUES(1190,'tt2570858','the-duke-of-burgundy','2021-06-30 20:15:07.313227','2021-07-01 12:53:32.910514','The Duke of Burgundy');
 INSERT INTO movies VALUES(1191,'tt2582782','hell-or-high-water','2021-06-30 20:15:07.460232','2021-07-01 12:53:35.123069','Hell or High Water');
 INSERT INTO movies VALUES(1192,'tt2654360','deceptive-practice-the-mysteries-and-mentors-of-ricky-jay','2021-06-30 20:15:07.653320','2021-07-01 12:53:37.501489','Deceptive Practice: The Mysteries and Mentors of Ricky Jay');
-INSERT INTO movies VALUES(1193,'tt2674806','inside-no-9-sardines','2021-06-30 20:15:07.788625','2021-07-01 12:53:39.833755','Inside No. 9');
+INSERT INTO movies VALUES(1193,'tt2674806',NULL,'2021-06-30 20:15:07.788625','2022-05-19 14:03:04.730793','Inside No. 9');
 INSERT INTO movies VALUES(1194,'tt2756032','the-one-i-love-2014','2021-06-30 20:15:07.931663','2021-07-01 12:53:42.363894','The One I Love');
 INSERT INTO movies VALUES(1195,'tt2793490','starry-eyes','2021-06-30 20:15:08.063941','2021-07-01 12:53:44.669545','Starry Eyes');
 INSERT INTO movies VALUES(1196,'tt2798920','annihilation','2021-06-30 20:15:08.232598','2021-07-01 12:53:46.977806','Annihilation');
