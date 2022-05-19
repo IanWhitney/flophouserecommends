@@ -725,7 +725,7 @@ INSERT INTO movies VALUES(710,'tt0097257','earth-girls-are-easy','2021-06-30 20:
 INSERT INTO movies VALUES(711,'tt0097429','ghoulies-iii-ghoulies-go-to-college','2021-06-30 20:13:52.325787','2021-07-01 12:35:12.311133','Ghoulies Go to College');
 INSERT INTO movies VALUES(712,'tt0097613','the-january-man','2021-06-30 20:13:52.487583','2021-07-01 12:35:14.720587','The January Man');
 INSERT INTO movies VALUES(713,'tt0097858','meet-the-feebles','2021-06-30 20:13:52.627621','2021-07-01 12:35:17.030963','Meet the Feebles');
-INSERT INTO movies VALUES(714,'tt0098084','pet-sematary-2019','2021-06-30 20:13:52.784241','2021-07-01 12:35:19.333501','Pet Sematary');
+INSERT INTO movies VALUES(714,'tt0098084','pet-sematary','2021-06-30 20:13:52.784241','2022-05-19 14:17:18.486130','Pet Sematary');
 INSERT INTO movies VALUES(715,'tt0098253','santa-sangre','2021-06-30 20:13:52.923844','2021-07-01 12:35:21.617697','Santa Sangre');
 INSERT INTO movies VALUES(716,'tt0098333','sinbad-of-the-seven-seas','2021-06-30 20:13:53.083898','2021-07-01 12:35:24.001594','Sinbad of the Seven Seas');
 INSERT INTO movies VALUES(717,'tt0098577','vampires-kiss','2021-06-30 20:13:53.250629','2021-07-01 12:35:26.296943','Vampire''s Kiss');
