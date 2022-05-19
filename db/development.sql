@@ -367,7 +367,7 @@ INSERT INTO movies VALUES(352,'tt0023362','the-purchase-price','2021-06-30 20:12
 INSERT INTO movies VALUES(353,'tt0023969','duck-soup-1933','2021-06-30 20:12:57.408051','2021-07-01 12:13:02.406881','Duck Soup');
 INSERT INTO movies VALUES(354,'tt0024188','island-of-lost-souls','2021-06-30 20:12:57.551123','2021-07-01 12:13:04.710697','Island of Lost Souls');
 INSERT INTO movies VALUES(355,'tt0025028','dames','2021-06-30 20:12:57.710241','2021-07-01 12:13:07.100297','Dames');
-INSERT INTO movies VALUES(356,'tt0025617','the-painted-veil','2021-06-30 20:12:57.860003','2021-07-01 12:13:09.333795','The Painted Veil');
+INSERT INTO movies VALUES(356,'tt0025617','the-painted-veil-1934-1','2021-06-30 20:12:57.860003','2022-05-19 12:11:09.077765','The Painted Veil');
 INSERT INTO movies VALUES(357,'tt0025746','the-scarlet-empress','2021-06-30 20:12:57.999981','2021-07-01 12:13:11.615641','The Scarlet Empress');
 INSERT INTO movies VALUES(358,'tt0026046','ah-wilderness','2021-06-30 20:12:58.134292','2021-07-01 12:13:14.087783','Ah Wilderness!');
 INSERT INTO movies VALUES(359,'tt0026144','broadway-melody-of-1936','2021-06-30 20:12:58.304467','2021-07-01 12:13:16.369665','Broadway Melody of 1936');
