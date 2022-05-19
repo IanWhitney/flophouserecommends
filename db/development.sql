@@ -547,7 +547,7 @@ INSERT INTO movies VALUES(532,'tt0068638','the-getaway','2021-06-30 20:13:24.843
 INSERT INTO movies VALUES(533,'tt0068661','the-great-northfield-minnesota-raid','2021-06-30 20:13:24.990339','2021-07-01 12:20:01.384178','The Great Northfield Minnesota Raid');
 INSERT INTO movies VALUES(534,'tt0068853','the-life-and-times-of-judge-roy-bean','2021-06-30 20:13:25.165915','2021-07-01 12:20:03.655061','The Life and Times of Judge Roy Bean');
 INSERT INTO movies VALUES(535,'tt0069121','prime-cut','2021-06-30 20:13:25.307758','2021-07-01 12:20:05.971061','Prime Cut');
-INSERT INTO movies VALUES(536,'tt0069124','private-parts-1997','2021-06-30 20:13:25.453611','2021-07-01 12:20:08.240009','Private Parts');
+INSERT INTO movies VALUES(536,'tt0069124','private-parts','2021-06-30 20:13:25.453611','2022-05-19 12:15:25.236040','Private Parts');
 INSERT INTO movies VALUES(537,'tt0069191','roma-2018','2021-06-30 20:13:25.609803','2021-07-01 12:20:10.521751','Roma');
 INSERT INTO movies VALUES(538,'tt0069495','whats-up-doc-1972','2021-06-30 20:13:25.754641','2021-07-01 12:20:12.844308','What''s Up, Doc?');
 INSERT INTO movies VALUES(539,'tt0069883','cinderella-liberty','2021-06-30 20:13:25.917877','2021-07-01 12:20:15.111246','Cinderella Liberty');
