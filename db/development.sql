@@ -379,7 +379,7 @@ INSERT INTO movies VALUES(364,'tt0027357','big-brown-eyes','2021-06-30 20:12:59.
 INSERT INTO movies VALUES(365,'tt0027459','come-and-get-it','2021-06-30 20:12:59.167746','2021-07-01 12:13:30.191840','Come and Get It');
 INSERT INTO movies VALUES(366,'tt0028167','rembrandt','2021-06-30 20:12:59.320185','2021-07-01 12:13:32.524856','Rembrandt');
 INSERT INTO movies VALUES(367,'tt0028816','easy-living','2021-06-30 20:12:59.478490','2021-07-01 12:13:34.907867','Easy Living');
-INSERT INTO movies VALUES(368,'tt0029030','the-hurricane','2021-06-30 20:12:59.617070','2021-07-01 12:13:37.183510','The Hurricane');
+INSERT INTO movies VALUES(368,'tt0029030','the-hurricane-1937','2021-06-30 20:12:59.617070','2022-05-23 20:20:47.124114','The Hurricane');
 INSERT INTO movies VALUES(369,'tt0029541','sh-the-octopus','2021-06-30 20:12:59.757851','2021-07-01 12:13:39.524904','Sh! The Octopus');
 INSERT INTO movies VALUES(370,'tt0029811','young-and-innocent','2021-06-30 20:12:59.918113','2021-07-01 12:13:42.182058','Young and Innocent');
 INSERT INTO movies VALUES(371,'tt0029843','the-adventures-of-robin-hood','2021-06-30 20:13:00.070466','2021-07-01 12:13:44.692027','The Adventures of Robin Hood');
