@@ -551,7 +551,7 @@ INSERT INTO movies VALUES(536,'tt0069124','private-parts','2021-06-30 20:13:25.4
 INSERT INTO movies VALUES(537,'tt0069191','roma','2021-06-30 20:13:25.609803','2022-05-23 20:15:29.850558','Roma');
 INSERT INTO movies VALUES(538,'tt0069495','whats-up-doc-1972','2021-06-30 20:13:25.754641','2021-07-01 12:20:12.844308','What''s Up, Doc?');
 INSERT INTO movies VALUES(539,'tt0069883','cinderella-liberty','2021-06-30 20:13:25.917877','2021-07-01 12:20:15.111246','Cinderella Liberty');
-INSERT INTO movies VALUES(540,'tt0069895','the-crazies-2010','2021-06-30 20:13:26.068392','2021-07-01 12:20:17.329457','The Crazies');
+INSERT INTO movies VALUES(540,'tt0069895','the-crazies','2021-06-30 20:13:26.068392','2022-05-23 20:30:20.397705','The Crazies');
 INSERT INTO movies VALUES(541,'tt0070061','love-and-anarchy','2021-06-30 20:13:26.231514','2021-07-01 12:20:19.591336','Film d''amore e d''anarchia, ovvero ''stamattina alle 10 in via dei Fiori nella nota casa di tolleranza...''');
 INSERT INTO movies VALUES(542,'tt0070077','the-friends-of-eddie-coyle','2021-06-30 20:13:26.386346','2021-07-01 12:20:21.947576','The Friends of Eddie Coyle');
 INSERT INTO movies VALUES(543,'tt0070215','my-name-is-nobody','2021-06-30 20:13:26.540653','2021-07-01 12:20:24.226570','My Name Is Nobody');
