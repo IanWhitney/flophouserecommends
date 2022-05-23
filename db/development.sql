@@ -703,7 +703,7 @@ INSERT INTO movies VALUES(688,'tt0093624','night-of-the-demons','2021-06-30 20:1
 INSERT INTO movies VALUES(689,'tt0093754','repentance','2021-06-30 20:13:48.973219','2021-07-01 12:26:01.177456','Repentance');
 INSERT INTO movies VALUES(690,'tt0093777','prince-of-darkness','2021-06-30 20:13:49.133626','2021-07-01 12:26:03.429960','Prince of Darkness');
 INSERT INTO movies VALUES(691,'tt0093822','raising-arizona','2021-06-30 20:13:49.306229','2021-07-01 12:26:05.698629','Raising Arizona');
-INSERT INTO movies VALUES(692,'tt0093873','this-is-spinal-tap','2021-06-30 20:13:49.455899','2021-07-01 12:26:07.941331','Rock ''n'' Roll Nightmare');
+INSERT INTO movies VALUES(692,'tt0093873','rock-n-roll-nightmare','2021-06-30 20:13:49.455899','2022-05-23 20:17:39.560192','Rock ''n'' Roll Nightmare');
 INSERT INTO movies VALUES(693,'tt0094089','swimming-to-cambodia','2021-06-30 20:13:49.595230','2021-07-01 12:34:30.800821','Swimming to Cambodia');
 INSERT INTO movies VALUES(694,'tt0094752','black-roses','2021-06-30 20:13:49.774942','2021-07-01 12:34:33.273070','Black Roses');
 INSERT INTO movies VALUES(695,'tt0094764','the-blood-of-heroes','2021-06-30 20:13:49.934485','2021-07-01 12:34:35.863473','The Blood of Heroes');
