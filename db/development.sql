@@ -878,7 +878,7 @@ INSERT INTO movies VALUES(863,'tt0368226','the-room','2021-06-30 20:14:15.769863
 INSERT INTO movies VALUES(864,'tt0372806','bright-leaves','2021-06-30 20:14:15.914352','2021-07-01 12:41:06.701452','Bright Leaves');
 INSERT INTO movies VALUES(865,'tt0377061','ill-believe-you','2021-06-30 20:14:16.071328','2021-07-01 12:41:08.980554','I''ll Believe You');
 INSERT INTO movies VALUES(866,'tt0379357','los-angeles-plays-itself','2021-06-30 20:14:16.223541','2021-07-01 12:41:11.265761','Los Angeles Plays Itself');
-INSERT INTO movies VALUES(867,'tt0381966','creep-2014','2021-06-30 20:14:16.398285','2021-07-01 12:41:13.592039','Creep');
+INSERT INTO movies VALUES(867,'tt0381966','creep','2021-06-30 20:14:16.398285','2022-05-23 20:06:13.980671','Creep');
 INSERT INTO movies VALUES(868,'tt0383028','synecdoche-new-york','2021-06-30 20:14:16.539357','2021-07-01 12:41:15.828587','Synecdoche, New York');
 INSERT INTO movies VALUES(869,'tt0385887','motherless-brooklyn','2021-06-30 20:14:16.682837','2021-07-01 12:41:18.525450','Motherless Brooklyn');
 INSERT INTO movies VALUES(870,'tt0386117','where-the-wild-things-are','2021-06-30 20:14:16.820363','2021-07-01 12:41:20.816615','Where the Wild Things Are');
