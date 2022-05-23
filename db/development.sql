@@ -647,7 +647,7 @@ INSERT INTO movies VALUES(632,'tt0084099','human-highway','2021-06-30 20:13:40.2
 INSERT INTO movies VALUES(633,'tt0084237','the-last-unicorn','2021-06-30 20:13:40.397638','2021-07-01 12:23:52.910700','The Last Unicorn');
 INSERT INTO movies VALUES(634,'tt0084269','losing-ground','2021-06-30 20:13:40.548043','2021-07-01 12:23:55.240586','Losing Ground');
 INSERT INTO movies VALUES(635,'tt0084516','poltergeist','2021-06-30 20:13:40.689641','2021-07-01 12:23:57.785074','Poltergeist');
-INSERT INTO movies VALUES(636,'tt0084747','sweeney-todd-the-demon-barber-of-fleet-street-2007','2021-06-30 20:13:40.838847','2021-07-01 12:24:00.070101','Sweeney Todd: The Demon Barber of Fleet Street');
+INSERT INTO movies VALUES(636,'tt0084747','sweeney-todd-the-demon-barber-of-fleet-street','2021-06-30 20:13:40.838847','2022-05-23 20:26:19.250691','Sweeney Todd: The Demon Barber of Fleet Street');
 INSERT INTO movies VALUES(637,'tt0084787','the-thing','2021-06-30 20:13:41.000155','2021-07-01 12:24:02.395741','The Thing');
 INSERT INTO movies VALUES(638,'tt0084855','the-verdict-1982','2021-06-30 20:13:41.138906','2021-07-01 12:24:04.681427','The Verdict');
 INSERT INTO movies VALUES(639,'tt0084945','zapped-2014','2021-06-30 20:13:41.279052','2021-07-01 12:24:06.951369','Zapped!');
@@ -735,7 +735,7 @@ INSERT INTO movies VALUES(720,'tt0099053','archangel-1990','2021-06-30 20:13:53.
 INSERT INTO movies VALUES(721,'tt0099271','circuitry-man','2021-06-30 20:13:53.853128','2021-07-01 12:35:35.909421','Circuitry Man');
 INSERT INTO movies VALUES(722,'tt0099365','darkman','2021-06-30 20:13:53.992726','2021-07-01 12:35:38.210728','Darkman');
 INSERT INTO movies VALUES(723,'tt0099450','dont-tell-her-its-me','2021-06-30 20:13:54.158888','2021-07-01 12:35:40.463560','Don''t Tell Her It''s Me');
-INSERT INTO movies VALUES(724,'tt0099851','the-evil-dead','2021-06-30 20:13:54.318438','2021-07-01 12:35:42.733203','Into the Woods');
+INSERT INTO movies VALUES(724,'tt0099851','into-the-woods','2021-06-30 20:13:54.318438','2022-05-23 20:28:22.601261','Into the Woods');
 INSERT INTO movies VALUES(725,'tt0099856','the-invisible-maniac','2021-06-30 20:13:54.464411','2021-07-01 12:35:45.000238','The Invisible Maniac');
 INSERT INTO movies VALUES(726,'tt0100150','millers-crossing','2021-06-30 20:13:54.629971','2021-07-01 12:35:47.298796','Miller''s Crossing');
 INSERT INTO movies VALUES(727,'tt0100234','close-up','2021-06-30 20:13:54.793673','2021-07-01 12:35:49.698446','Nema-ye Nazdik');
@@ -1146,7 +1146,7 @@ INSERT INTO movies VALUES(1131,'tt1974419','the-neon-demon','2021-06-30 20:14:57
 INSERT INTO movies VALUES(1132,'tt1977895','resolution','2021-06-30 20:14:58.093659','2021-07-01 12:51:19.377385','Resolution');
 INSERT INTO movies VALUES(1133,'tt1981677','pitch-perfect','2021-06-30 20:14:58.235827','2021-07-01 12:51:21.631154','Pitch Perfect');
 INSERT INTO movies VALUES(1134,'tt1984153','excision','2021-06-30 20:14:58.373251','2021-07-01 12:51:23.914453','Excision');
-INSERT INTO movies VALUES(1135,'tt2004205','death-train','2021-06-30 20:14:58.527689','2021-07-01 12:51:26.142518','Detonator');
+INSERT INTO movies VALUES(1135,'tt2004205','detonator-2013','2021-06-30 20:14:58.527689','2022-05-23 20:27:21.252061','Detonator');
 INSERT INTO movies VALUES(1136,'tt2024544','12-years-a-slave','2021-06-30 20:14:58.667656','2021-07-01 12:51:28.392161','12 Years a Slave');
 INSERT INTO movies VALUES(1137,'tt2039345','grand-piano','2021-06-30 20:14:58.859302','2021-07-01 12:51:30.669578','Grand Piano');
 INSERT INTO movies VALUES(1138,'tt2040281','beauty-is-embarrassing','2021-06-30 20:14:58.988711','2021-07-01 12:51:32.970490','Beauty Is Embarrassing');
