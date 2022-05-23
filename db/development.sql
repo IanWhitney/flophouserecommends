@@ -1129,7 +1129,7 @@ INSERT INTO movies VALUES(1114,'tt1791528','inherent-vice','2021-06-30 20:14:55.
 INSERT INTO movies VALUES(1115,'tt1814836','project-nim','2021-06-30 20:14:55.619422','2021-07-01 12:50:40.641035','Project Nim');
 INSERT INTO movies VALUES(1116,'tt1817273','the-place-beyond-the-pines','2021-06-30 20:14:55.765524','2021-07-01 12:50:42.939504','The Place Beyond the Pines');
 INSERT INTO movies VALUES(1117,'tt1820488','war-witch','2021-06-30 20:14:55.916772','2021-07-01 12:50:45.188644','Rebelle');
-INSERT INTO movies VALUES(1118,'tt1829012','the-passion-of-the-christ','2021-06-30 20:14:56.065679','2021-07-01 12:50:47.433750','Passion');
+INSERT INTO movies VALUES(1118,'tt1829012','passion-2012','2021-06-30 20:14:56.065679','2022-05-23 20:45:49.995149','Passion');
 INSERT INTO movies VALUES(1119,'tt1839590','ray-harryhausen-special-effects-titan','2021-06-30 20:14:56.209494','2021-07-01 12:50:49.897801','Ray Harryhausen: Special Effects Titan');
 INSERT INTO movies VALUES(1120,'tt1843303','the-velocipastor','2021-06-30 20:14:56.343740','2021-07-01 12:50:52.213926','The VelociPastor');
 INSERT INTO movies VALUES(1121,'tt1853739','youre-next','2021-06-30 20:14:56.477630','2021-07-01 12:50:54.513073','You''re Next');
