@@ -949,7 +949,7 @@ INSERT INTO movies VALUES(934,'tt0829482','superbad','2021-06-30 20:14:26.790962
 INSERT INTO movies VALUES(935,'tt0842929','paranoid-park','2021-06-30 20:14:26.959615','2021-07-01 12:43:49.655897','Paranoid Park');
 INSERT INTO movies VALUES(936,'tt0844286','the-brothers-bloom','2021-06-30 20:14:27.159523','2021-07-01 12:43:51.985575','The Brothers Bloom');
 INSERT INTO movies VALUES(937,'tt0844471','cloudy-with-a-chance-of-meatballs','2021-06-30 20:14:27.353129','2021-07-01 12:43:54.239007','Cloudy with a Chance of Meatballs');
-INSERT INTO movies VALUES(938,'tt0844479','la-collectionneuse','2021-06-30 20:14:27.501630','2021-07-01 12:43:56.481129','The Collector');
+INSERT INTO movies VALUES(938,'tt0844479','the-collector-2009','2021-06-30 20:14:27.501630','2022-05-24 16:06:18.000080','The Collector');
 INSERT INTO movies VALUES(939,'tt0856288','inside-2007','2021-06-30 20:14:27.648682','2021-07-01 12:43:58.723725','À l''intérieur');
 INSERT INTO movies VALUES(940,'tt0862856','trick-r-treat','2021-06-30 20:14:27.846058','2021-07-01 12:44:00.992859','Trick ''r Treat');
 INSERT INTO movies VALUES(941,'tt0870111','frost-nixon','2021-06-30 20:14:27.993960','2021-07-01 12:44:03.264118','Frost/Nixon');
@@ -1055,7 +1055,7 @@ INSERT INTO movies VALUES(1040,'tt1316037','birdemic-shock-and-terror','2021-06-
 INSERT INTO movies VALUES(1041,'tt1316536','the-loved-ones','2021-06-30 20:14:44.078800','2021-07-01 12:47:51.252484','The Loved Ones');
 INSERT INTO movies VALUES(1042,'tt1320244','the-last-exorcism','2021-06-30 20:14:44.221219','2021-07-01 12:47:53.503142','The Last Exorcism');
 INSERT INTO movies VALUES(1043,'tt1323045','frozen-2013','2021-06-30 20:14:44.355782','2021-07-01 12:47:55.755782','Frozen');
-INSERT INTO movies VALUES(1044,'tt1334512','arthur','2021-06-30 20:14:44.512660','2021-07-01 12:47:58.223580','Arthur');
+INSERT INTO movies VALUES(1044,'tt1334512','arthur-2011','2021-06-30 20:14:44.512660','2022-05-24 16:05:49.295231','Arthur');
 INSERT INTO movies VALUES(1045,'tt1340800','tinker-tailor-soldier-spy','2021-06-30 20:14:44.662060','2021-07-01 12:48:00.544572','Tinker Tailor Soldier Spy');
 INSERT INTO movies VALUES(1046,'tt1343727','dredd','2021-06-30 20:14:44.788701','2021-07-01 12:48:02.852585','Dredd');
 INSERT INTO movies VALUES(1047,'tt1365050','beasts-of-no-nation','2021-06-30 20:14:44.962230','2021-07-01 12:48:05.113244','Beasts of No Nation');
