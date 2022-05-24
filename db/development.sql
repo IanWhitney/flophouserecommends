@@ -992,7 +992,7 @@ INSERT INTO movies VALUES(977,'tt10612922','one-night-in-miami','2021-06-30 20:1
 INSERT INTO movies VALUES(978,'tt10706602','collective','2021-06-30 20:14:33.587203','2021-07-01 12:45:28.074336','Colectiv');
 INSERT INTO movies VALUES(979,'tt10804786','welcome-to-sudden-death','2021-06-30 20:14:33.746114','2021-07-01 12:45:30.334653','Welcome to Sudden Death');
 INSERT INTO movies VALUES(980,'tt1084950','rachel-getting-married','2021-06-30 20:14:33.885462','2021-07-01 12:45:32.612413','Rachel Getting Married');
-INSERT INTO movies VALUES(981,'tt1085507','the-square-2017','2021-06-30 20:14:34.019168','2021-07-01 12:45:34.861600','The Square');
+INSERT INTO movies VALUES(981,'tt1085507','the-square','2021-06-30 20:14:34.019168','2022-05-24 19:59:36.173335','The Square');
 INSERT INTO movies VALUES(982,'tt1091722','adventureland','2021-06-30 20:14:34.152651','2021-07-01 12:45:37.056521','Adventureland');
 INSERT INTO movies VALUES(983,'tt1093824','encounters-at-the-end-of-the-world','2021-06-30 20:14:34.565201','2021-07-01 12:45:39.288850','Encounters at the End of the World');
 INSERT INTO movies VALUES(984,'tt1093842','my-winnipeg','2021-06-30 20:14:34.747787','2021-07-01 12:45:41.560126','My Winnipeg');
