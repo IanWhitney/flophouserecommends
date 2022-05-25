@@ -886,7 +886,7 @@ INSERT INTO movies VALUES(871,'tt0390384','primer','2021-06-30 20:14:16.988858',
 INSERT INTO movies VALUES(872,'tt0397150','garth-marenghis-darkplace','2021-06-30 20:14:17.154408','2021-07-01 12:41:25.314973','Garth Marenghi''s Darkplace');
 INSERT INTO movies VALUES(873,'tt0398286','tangled-2010','2021-06-30 20:14:17.315544','2021-07-01 12:41:27.580588','Tangled');
 INSERT INTO movies VALUES(874,'tt0401729','john-carter','2021-06-30 20:14:17.473720','2021-07-01 12:41:29.854314','John Carter');
-INSERT INTO movies VALUES(875,'tt0402743','abominable-2019','2021-06-30 20:14:17.661999','2021-07-01 12:41:32.111053','Abominable');
+INSERT INTO movies VALUES(875,'tt0402743','abominable','2021-06-30 20:14:17.661999','2022-05-25 18:55:05.238218','Abominable');
 INSERT INTO movies VALUES(876,'tt0405296','a-scanner-darkly','2021-06-30 20:14:17.801118','2021-07-01 12:41:34.347659','A Scanner Darkly');
 INSERT INTO movies VALUES(877,'tt0407304','war-of-the-worlds','2021-06-30 20:14:18.003726','2021-07-01 12:41:36.578617','War of the Worlds');
 INSERT INTO movies VALUES(878,'tt0408236','sweeney-todd-the-demon-barber-of-fleet-street-2007','2021-06-30 20:14:18.175972','2021-07-01 12:41:38.871265','Sweeney Todd: The Demon Barber of Fleet Street');
