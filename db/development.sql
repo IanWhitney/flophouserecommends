@@ -614,7 +614,7 @@ INSERT INTO movies VALUES(599,'tt0079714','phantasm','2021-06-30 20:13:35.295735
 INSERT INTO movies VALUES(600,'tt0079727','the-plumber','2021-06-30 20:13:35.449118','2021-07-01 12:22:35.910954','The Plumber');
 INSERT INTO movies VALUES(601,'tt0079781','real-life','2021-06-30 20:13:35.588297','2021-07-01 12:22:38.113364','Real Life');
 INSERT INTO movies VALUES(602,'tt0079833','lupin-the-third-the-castle-of-cagliostro','2021-06-30 20:13:35.739968','2021-07-01 12:22:40.360598','Lupin the Third: Castle of Cagliostro');
-INSERT INTO movies VALUES(603,'tt0080057','dawn-of-the-dead','2021-06-30 20:13:35.875681','2021-07-01 12:22:42.714634','Zombie Flesh Eaters');
+INSERT INTO movies VALUES(603,'tt0080057','zombie-flesh-eaters','2021-06-30 20:13:35.875681','2022-05-25 18:59:28.927804','Zombie Flesh Eaters');
 INSERT INTO movies VALUES(604,'tt0080100','the-visitor-1979','2021-06-30 20:13:36.023055','2021-07-01 12:22:44.990233','The Visitor');
 INSERT INTO movies VALUES(605,'tt0080139','winter-kills','2021-06-30 20:13:36.157859','2021-07-01 12:22:47.425785','Winter Kills');
 INSERT INTO movies VALUES(606,'tt0080297','tinker-tailor-soldier-spy-1979','2021-06-30 20:13:36.316594','2022-05-24 16:01:19.829133','Tinker Tailor Soldier Spy');
