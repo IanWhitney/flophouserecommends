@@ -847,7 +847,7 @@ INSERT INTO movies VALUES(832,'tt0229519','black-lizard-1962','2021-06-30 20:14:
 INSERT INTO movies VALUES(833,'tt0230600','the-others','2021-06-30 20:14:11.196977','2021-07-01 12:39:54.845231','The Others');
 INSERT INTO movies VALUES(834,'tt0243133','the-man-who-wasnt-there-2001','2021-06-30 20:14:11.346850','2021-07-01 12:39:57.066918','The Man Who Wasn''t There');
 INSERT INTO movies VALUES(835,'tt0244316','yi-yi','2021-06-30 20:14:11.492822','2021-07-01 12:39:59.364721','Yi Yi');
-INSERT INTO movies VALUES(836,'tt0248119','jojos-bizarre-adventure-diamond-is-unbreakable-chapter-1','2021-06-30 20:14:11.646715','2021-07-01 12:40:01.639868','Jojo no kimyô na bôken');
+INSERT INTO movies VALUES(836,'tt0248119',NULL,'2021-06-30 20:14:11.646715','2022-05-25 14:07:26.191796','Jojo no kimyô na bôken');
 INSERT INTO movies VALUES(837,'tt0254871','wishmaster-3-beyond-the-gates-of-hell','2021-06-30 20:14:11.795276','2021-07-01 12:40:04.172579','Wishmaster 3: Beyond the Gates of Hell');
 INSERT INTO movies VALUES(838,'tt0254872','wishmaster-4-the-prophecy-fulfilled','2021-06-30 20:14:11.934384','2021-07-01 12:40:06.436279','Wishmaster 4: The Prophecy Fulfilled');
 INSERT INTO movies VALUES(839,'tt0260991','joint-security-area','2021-06-30 20:14:12.086761','2021-07-01 12:40:08.725066','Joint Security Area');
