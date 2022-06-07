@@ -1625,6 +1625,7 @@ INSERT INTO hosts VALUES(70,'Chuck Bryant','2022-03-12 17:09:16.336918','2022-03
 INSERT INTO hosts VALUES(71,'Joel Hodgson','2022-04-17 02:16:20.902662','2022-04-17 02:16:20.902662');
 INSERT INTO hosts VALUES(72,'Matt McGinnis','2022-04-17 02:16:21.049832','2022-04-17 02:16:21.049832');
 INSERT INTO hosts VALUES(73,'Griffin McElroy','2022-05-01 19:19:22.094047','2022-05-01 19:19:22.094047');
+INSERT INTO hosts VALUES(74,'Felicia Day','2022-06-07 00:06:24.359394','2022-06-07 00:06:24.359394');
 CREATE TABLE IF NOT EXISTS "episodes" ("id" integer NOT NULL PRIMARY KEY, "movie_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_5113569389"
 FOREIGN KEY ("movie_id")
   REFERENCES "movies" ("id")
@@ -4477,6 +4478,7 @@ INSERT INTO episodes_hosts VALUES(370,3);
 INSERT INTO episodes_hosts VALUES(371,1);
 INSERT INTO episodes_hosts VALUES(371,2);
 INSERT INTO episodes_hosts VALUES(371,3);
+INSERT INTO episodes_hosts VALUES(315,74);
 CREATE TABLE IF NOT EXISTS "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL);
 INSERT INTO active_storage_blobs VALUES(1422,'rkeyge328rx6kgvbfjsq3hhljp1o','17.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',36368,'9ERqWIuVby3wNWuBmc8F7Q==','2021-07-01 12:11:05.775955');
 INSERT INTO active_storage_blobs VALUES(1423,'kuegdp3yk8dvegun7idq86v2fmqw','96.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',27557,'YlzEzTROT+IopYP9Ly+4Eg==','2021-07-01 12:11:08.304230');
@@ -7564,7 +7566,7 @@ FOREIGN KEY ("blob_id")
 );
 DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('movies',1539);
-INSERT INTO sqlite_sequence VALUES('hosts',73);
+INSERT INTO sqlite_sequence VALUES('hosts',74);
 INSERT INTO sqlite_sequence VALUES('active_storage_blobs',2963);
 INSERT INTO sqlite_sequence VALUES('active_storage_attachments',2963);
 CREATE UNIQUE INDEX "index_movies_on_imdb_id" ON "movies" ("imdb_id");
