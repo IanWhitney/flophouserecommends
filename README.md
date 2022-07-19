@@ -7,13 +7,17 @@ Rails, using Sqlite as the database, running in Docker.
 ## Setup
 
 - Clone repo
+- Add a `.env` file 
+  - `OMDBAPI=key`
+  - `AWS_ACCESS_KEY_ID=key`
+  - `AWS_SECRET_ACCESS_KEY=key`
 - `script/setup`
 
 ## Running Locally
 
 After running setup
 
-`docker run --rm -it -v "$PWD":/app -p 127.0.0.1:3000:3000 fhr:latest`
+`docker run --env-file .env --rm -it -v "$PWD":/app -p 127.0.0.1:3000:3000 fhr:latest`
 
 ## Deployment
 
