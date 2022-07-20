@@ -22,4 +22,18 @@ After running setup
 ## Deployment
 
 - Have my Heroku credentials (if you are not me, this is a problem)
-- `heroku container:push web && heroku container:release web`
+- Set these config vars
+  - `aws_access_key_id`
+  - `AWS_SECRET_ACCESS_KEY`
+  - `OMDBAPIKEY`
+  - `RAILS_ENV`
+  - `SECRET_KEY_BASE`
+
+To deploy
+
+```
+docker buildx build --platform linux/amd64 -t fhr:latest . \
+docker tag fhr:latest registry.heroku.com/[app]/web
+docker push registry.heroku.com/[app]/web
+heroku container:release web -a [app]
+```

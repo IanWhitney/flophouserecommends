@@ -26,9 +26,10 @@ RUN bundle install
 COPY package.json yarn.lock ./
 RUN rails yarn install
 COPY . .
+RUN yarn install --check-files
 
 RUN RAILS_ENV=development rails webpacker:compile
-RUN RAILS_ENV=production rails webpacker:compile
+RUN RAILS_ENV=production SECRET_KEY_BASE=production rails webpacker:compile
 
 ENV RAILS_ENV="development"
 
