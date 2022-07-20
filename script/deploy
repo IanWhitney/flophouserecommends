@@ -7,5 +7,7 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-heroku container:push web -a afternoon-hollows-06212
+docker buildx build --platform linux/amd64 -t fhr:latest .
+docker tag fhr:latest registry.heroku.com/afternoon-hollows-06212/web
+docker push registry.heroku.com/afternoon-hollows-06212/web
 heroku container:release web -a afternoon-hollows-06212
