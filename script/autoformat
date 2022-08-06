@@ -6,4 +6,10 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-docker run --rm -it -v "$PWD":/app --entrypoint standardrb fhr:latest
+docker run \
+  --rm \
+  -it \
+  -v "$PWD":/app \
+  --env-file .env \
+  --entrypoint standardrb \
+  fhr:latest
