@@ -1,22 +1,21 @@
 namespace :episode do
   desc "Add Episode"
   task add: :environment do
-    episode_id = 394
-    movie = Movie.find_or_create_by(imdb_id: "tt12823454", letterboxd_id: "your-place-or-mine-2023")
+    episode_id = 395
+    movie = Movie.find_or_create_by(imdb_id: "tt13375076", letterboxd_id: "the-popes-exorcist")
     episode = Episode.find_or_create_by(id: episode_id, movie: movie)
 
     x = {
       Host.find(1) => [
-        {imdb_id: "tt0270523", letterboxd_id: "the-movie-orgy"}
+        {imdb_id: "tt13375076", letterboxd_id: "the-popes-exorcist"},
+        {imdb_id: "tt2906216", letterboxd_id: "dungeons-dragons-honor-among-thieves"}
       ],
       Host.find(2) => [
-        {imdb_id: "tt3915174", letterboxd_id: "puss-in-boots-the-last-wish"}
+        {imdb_id: "tt8574252", letterboxd_id: "the-witch-part-1-the-subversion"},
+        {imdb_id: "tt13721828", letterboxd_id: "the-witch-part-2-the-other-one"}
       ],
       Host.find(3) => [
-        {imdb_id: "tt0075404", letterboxd_id: "the-ascent"}
-      ],
-      Host.find(4) => [
-        {imdb_id: "tt11687104", letterboxd_id: "alice-darling"}
+        {imdb_id: "tt0094670", letterboxd_id: "the-appointments-of-dennis-jennings"}
       ]
     }
 
