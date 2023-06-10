@@ -1657,6 +1657,10 @@ INSERT INTO movies VALUES(1642,'tt18079362','80-for-brady','2023-05-22 03:03:07.
 INSERT INTO movies VALUES(1643,'tt6791350','guardians-of-the-galaxy-vol-3','2023-05-22 03:03:08.943087','2023-05-22 03:03:09.008881','Guardians of the Galaxy Vol. 3');
 INSERT INTO movies VALUES(1644,'tt13345606','evil-dead-rise','2023-05-22 03:03:09.753388','2023-05-22 03:03:09.819621','Evil Dead Rise');
 INSERT INTO movies VALUES(1645,'tt0067197','the-hellstrom-chronicle','2023-05-22 03:03:10.498255','2023-05-22 03:03:10.563822','The Hellstrom Chronicle');
+INSERT INTO movies VALUES(1646,'tt12261776','65','2023-06-10 13:03:49.651775','2023-06-10 13:03:49.824548','65');
+INSERT INTO movies VALUES(1647,'tt13521006','beau-is-afraid','2023-06-10 13:03:51.263919','2023-06-10 13:03:51.330939','Beau Is Afraid');
+INSERT INTO movies VALUES(1648,'tt16419074','air-2023','2023-06-10 13:03:52.016968','2023-06-10 13:03:52.083428','Air');
+INSERT INTO movies VALUES(1649,'tt0045009','park-row','2023-06-10 13:03:53.109228','2023-06-10 13:03:53.174540','Park Row');
 CREATE TABLE IF NOT EXISTS "hosts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
 INSERT INTO hosts VALUES(1,'Dan McCoy','2021-06-30 20:16:08.405161','2021-06-30 20:16:08.405161');
 INSERT INTO hosts VALUES(2,'Stuart Wellington','2021-06-30 20:16:08.508544','2021-06-30 20:16:08.508544');
@@ -2135,6 +2139,7 @@ INSERT INTO episodes VALUES(393,1628,'2023-04-15 17:05:20.337399','2023-04-15 17
 INSERT INTO episodes VALUES(394,1632,'2023-04-22 21:35:23.663691','2023-04-22 21:35:23.663691');
 INSERT INTO episodes VALUES(395,1637,'2023-05-09 01:14:46.988716','2023-05-09 01:14:46.988716');
 INSERT INTO episodes VALUES(396,1642,'2023-05-22 03:03:08.208639','2023-05-22 03:03:08.208639');
+INSERT INTO episodes VALUES(397,1646,'2023-06-10 13:03:50.587414','2023-06-10 13:03:50.587414');
 CREATE TABLE IF NOT EXISTS "recommendations" ("id" integer NOT NULL PRIMARY KEY, "episode_id" integer DEFAULT NULL, "host_id" integer DEFAULT NULL, "movie_id" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_218d10a665"
 FOREIGN KEY ("host_id")
   REFERENCES "hosts" ("id")
@@ -3514,6 +3519,9 @@ INSERT INTO recommendations VALUES(1366,395,3,1641,'2023-05-09 01:14:50.530526',
 INSERT INTO recommendations VALUES(1367,396,1,1643,'2023-05-22 03:03:09.246776','2023-05-22 03:03:09.246776');
 INSERT INTO recommendations VALUES(1368,396,2,1644,'2023-05-22 03:03:09.968989','2023-05-22 03:03:09.968989');
 INSERT INTO recommendations VALUES(1369,396,3,1645,'2023-05-22 03:03:10.750339','2023-05-22 03:03:10.750339');
+INSERT INTO recommendations VALUES(1370,397,1,1647,'2023-06-10 13:03:51.547146','2023-06-10 13:03:51.547146');
+INSERT INTO recommendations VALUES(1371,397,2,1648,'2023-06-10 13:03:52.262294','2023-06-10 13:03:52.262294');
+INSERT INTO recommendations VALUES(1372,397,3,1649,'2023-06-10 13:03:53.362124','2023-06-10 13:03:53.362124');
 CREATE TABLE IF NOT EXISTS "episodes_hosts" ("episode_id" integer DEFAULT NULL, "host_id" integer DEFAULT NULL, CONSTRAINT "fk_rails_4c6aefc249"
 FOREIGN KEY ("episode_id")
   REFERENCES "episodes" ("id")
@@ -4784,6 +4792,9 @@ INSERT INTO episodes_hosts VALUES(395,3);
 INSERT INTO episodes_hosts VALUES(396,1);
 INSERT INTO episodes_hosts VALUES(396,2);
 INSERT INTO episodes_hosts VALUES(396,3);
+INSERT INTO episodes_hosts VALUES(397,1);
+INSERT INTO episodes_hosts VALUES(397,2);
+INSERT INTO episodes_hosts VALUES(397,3);
 CREATE TABLE IF NOT EXISTS "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL);
 INSERT INTO active_storage_blobs VALUES(1422,'rkeyge328rx6kgvbfjsq3hhljp1o','17.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',36368,'9ERqWIuVby3wNWuBmc8F7Q==','2021-07-01 12:11:05.775955');
 INSERT INTO active_storage_blobs VALUES(1423,'kuegdp3yk8dvegun7idq86v2fmqw','96.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',27557,'YlzEzTROT+IopYP9Ly+4Eg==','2021-07-01 12:11:08.304230');
@@ -6429,6 +6440,10 @@ INSERT INTO active_storage_blobs VALUES(3066,'hj3m4be1f53wulkuaj0aez8ckswj','.jp
 INSERT INTO active_storage_blobs VALUES(3067,'aouoy91rjtb3kjwe0un59f7i89mf','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',35649,'CxISsdsk5pOYXoM+FfDosw==','2023-05-22 03:03:08.979986');
 INSERT INTO active_storage_blobs VALUES(3068,'du08othj14wjryns0vbhxwlm8in0','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',19540,'fFnDin3SWfF4Z2m85h9YtA==','2023-05-22 03:03:09.790459');
 INSERT INTO active_storage_blobs VALUES(3069,'qrepd4kv7hrkn1oarmcbdojr5xyz','.jpg','image/jpeg','{"identified":true}','amazon',24898,'XsbmGlyYdkK0qv7IMgGIYg==','2023-05-22 03:03:10.535757');
+INSERT INTO active_storage_blobs VALUES(3070,'9x06vr814za3c8wg2u9n6l4n167u','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',24464,'MaB5s2Rxjrgs+kscUZtLcw==','2023-06-10 13:03:49.790456');
+INSERT INTO active_storage_blobs VALUES(3071,'16cpk79ye4a76ib849c5f5phs721','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',22740,'pnCO9al1MIxRk5sjiL/k0g==','2023-06-10 13:03:51.300431');
+INSERT INTO active_storage_blobs VALUES(3072,'btrh0zhcyil4bucqnhfxu3n1clkp','.jpg','image/jpeg','{"identified":true,"analyzed":true}','amazon',34202,'uBnFFA/WW5ENvt9ZiAg1tg==','2023-06-10 13:03:52.053863');
+INSERT INTO active_storage_blobs VALUES(3073,'sli7of46h65rxtmgey56e5s25a0b','.jpg','image/jpeg','{"identified":true}','amazon',39467,'gzGH8YGHRWUaLOygdpFnnQ==','2023-06-10 13:03:53.146404');
 CREATE TABLE IF NOT EXISTS "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
 FOREIGN KEY ("blob_id")
   REFERENCES "active_storage_blobs" ("id")
@@ -8077,15 +8092,19 @@ INSERT INTO active_storage_attachments VALUES(3066,'poster','Movie',1642,3066,'2
 INSERT INTO active_storage_attachments VALUES(3067,'poster','Movie',1643,3067,'2023-05-22 03:03:08.994322');
 INSERT INTO active_storage_attachments VALUES(3068,'poster','Movie',1644,3068,'2023-05-22 03:03:09.805924');
 INSERT INTO active_storage_attachments VALUES(3069,'poster','Movie',1645,3069,'2023-05-22 03:03:10.550523');
+INSERT INTO active_storage_attachments VALUES(3070,'poster','Movie',1646,3070,'2023-06-10 13:03:49.810475');
+INSERT INTO active_storage_attachments VALUES(3071,'poster','Movie',1647,3071,'2023-06-10 13:03:51.315736');
+INSERT INTO active_storage_attachments VALUES(3072,'poster','Movie',1648,3072,'2023-06-10 13:03:52.070270');
+INSERT INTO active_storage_attachments VALUES(3073,'poster','Movie',1649,3073,'2023-06-10 13:03:53.159845');
 CREATE TABLE IF NOT EXISTS "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
 FOREIGN KEY ("blob_id")
   REFERENCES "active_storage_blobs" ("id")
 );
 DELETE FROM sqlite_sequence;
-INSERT INTO sqlite_sequence VALUES('movies',1645);
+INSERT INTO sqlite_sequence VALUES('movies',1649);
 INSERT INTO sqlite_sequence VALUES('hosts',77);
-INSERT INTO sqlite_sequence VALUES('active_storage_blobs',3069);
-INSERT INTO sqlite_sequence VALUES('active_storage_attachments',3069);
+INSERT INTO sqlite_sequence VALUES('active_storage_blobs',3073);
+INSERT INTO sqlite_sequence VALUES('active_storage_attachments',3073);
 CREATE UNIQUE INDEX "index_movies_on_imdb_id" ON "movies" ("imdb_id");
 CREATE INDEX "index_recommendations_on_episode_id" ON "recommendations" ("episode_id");
 CREATE INDEX "index_recommendations_on_host_id" ON "recommendations" ("host_id");
