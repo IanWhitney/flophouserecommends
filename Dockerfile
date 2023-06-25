@@ -8,6 +8,7 @@ RUN apt-get update && \
 
 # nodejs, yarn
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash - && \
+  apt-get install -y npm && \
   apt-get install -y nodejs && \
   npm install -g yarn
 
@@ -29,7 +30,7 @@ COPY . .
 RUN yarn install --check-files
 
 RUN RAILS_ENV=development rails webpacker:compile
-RUN RAILS_ENV=production SECRET_KEY_BASE=production rails webpacker:compile
+RUN NODE_OPTIONS=--openssl-legacy-provider RAILS_ENV=production SECRET_KEY_BASE=production rails webpacker:compile
 
 ENV RAILS_ENV="development"
 
