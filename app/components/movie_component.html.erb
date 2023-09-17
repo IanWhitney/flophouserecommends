@@ -1,6 +1,10 @@
 <div class="bg-gray-50 rounded-lg mb-6 p-2">
   <div class="text-center">
+  <% if @movie.poster.persisted? %>
     <%= link_to(image_tag(url_for(@movie.poster), alt: "Poster for #{@movie.title}", class: "inline"), @movie) %>
+  <% else %>
+    No poster available
+  <% end %>
   </div>
   <h4 class="text-xl font-semibold tracking-wide text-center"><i><%= link_to(@movie.title, @movie) %></i></h4>
   <% if @movie.recommended? %>
