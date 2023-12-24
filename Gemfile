@@ -1,27 +1,20 @@
 source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "~>3"
+ruby "3.2.2"
 
 gem "aws-sdk-s3"
-gem "bootsnap", ">= 1.9.3", require: false
-gem "jbuilder", "~> 2.7"
-gem "puma", "~> 5.0"
-gem "rails", "~> 6.1"
-gem "sass-rails", ">= 6"
-gem "sqlite3", "~> 1.6"
-gem "turbolinks", "~> 5"
+gem "bootsnap", require: false
+gem "puma", ">= 5.0"
+gem "rails", "~> 7.1.2"
+gem "sprockets-rails"
+gem "sqlite3", "~> 1.4"
+gem "tailwindcss-rails"
 gem "view_component"
-gem "webpacker", "~> 5.0"
 
 group :development, :test do
-  gem "standard"
+  gem "debug", platforms: %i[mri windows]
 end
 
 group :development do
-  gem "listen", "~> 3.3"
-  gem "spring"
-  gem "bullet"
+  gem "web-console"
 end
-
-gem "tailwindcss-rails"
