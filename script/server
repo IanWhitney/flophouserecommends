@@ -7,7 +7,9 @@ cd "$(dirname "$0")/.."
 docker run \
   --rm \
   -it \
+  -p 3000:3000 \
   --env-file .env \
-  -v "$PWD":/app \
-  -p 127.0.0.1:3000:3000 \
-  fhr:latest
+  -e RAILS_ENV=development \
+  -v "$PWD":/rails \
+  fhr:latest \
+  ./bin/dev

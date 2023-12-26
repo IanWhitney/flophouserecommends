@@ -10,6 +10,7 @@ docker run \
   --rm \
   -it \
   --env-file .env \
-  -v "$PWD":/app \
+  -e RAILS_ENV=development \
+  -v "$PWD":/rails \
   fhr:latest \
-  rails episode:add
+  ./bin/rails episode:add

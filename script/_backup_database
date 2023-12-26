@@ -9,4 +9,4 @@ set -e
 cd "$(dirname "$0")/.."
 
 echo "==> Database backup..."
-sqlite3 db/development.sqlite3 .dump > db/development.sql
+sqlite3 /rails/storage/development.sqlite3 .dump > /rails/storage/development.sql
