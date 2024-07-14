@@ -12,4 +12,4 @@ docker run \
   --env-file .env \
   -v "$PWD":/app \
   fhr:latest \
-  rails c
+  ./bin/rails c
