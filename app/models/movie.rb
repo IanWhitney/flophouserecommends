@@ -34,6 +34,11 @@ class Movie < ApplicationRecord
     @recommendations ||= Recommendation.where(movie: self)
   end
 
+  def replace_poster(url)
+    poster.purge if poster.attached?
+    attach_poster(url)
+  end
+
   private
 
   def imdb_entry
@@ -55,9 +60,13 @@ class Movie < ApplicationRecord
     return nil if poster.attached?
     return nil unless imdb_entry.has_poster?
 
+    attach_poster(imdb_entry.poster_uri.to_s)
+  end
+
+  def attach_poster(url)
     begin
       tmp = Tempfile.new(imdb_id, binmode: true)
-      tmp << URI(imdb_entry.poster_uri.to_s).read
+      tmp << URI(url).read
       tmp.rewind
       poster.attach(io: tmp, filename: "#{id}.jpg", content_type: "image/jpeg", identify: false)
     rescue
