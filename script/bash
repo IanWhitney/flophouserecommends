@@ -7,7 +7,6 @@ cd "$(dirname "$0")/.."
 docker run \
   --rm \
   -it \
-  -p 3000:3000 \
   --env-file .env \
   -e RAILS_ENV=development \
   -v "$PWD":/rails \
